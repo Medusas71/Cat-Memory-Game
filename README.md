@@ -32,7 +32,17 @@
 </details>
 
 <a id="description"></a>
-# Description
+# Description  
+
+I am currently studying the Full Stack Development Course through Code Institute.
+Part of the course I am required to complete 4 milestone projects.
+This memory game is my second milestone project which is part of the 
+Interactive Frontend Development Module.
+
+The cat memory game has been created for people of all ages that love cats and 
+would like to test their memory.
+The purpose of this website is to improve brain functionality such as focus, 
+concentration and attention and to also have fun.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -41,6 +51,24 @@
 
 <a id="user-stories"></a>
 ## User Stories
+
+Players Goals
+
+* As a player, I would like to improve my concentration skills
+* As a player, I would like to improve my focus skills
+* As a player, I would like to improve my attention to detail
+* As a player, I would like to have clear instructions on how to play the game
+* As a player, I would like to be able to increase the level of difficulty to improve
+brain functionality
+* As a player, I would like to exit the game at any time
+* As a player, I would like to be able to replay the level that I am on after
+completing that level
+* As a player, when replaying the level, I would like all the cards to be shuffled
+* As a player, I would like to click a card and the card flips and displays a cat picture
+* As a player, I would like the cards that I matched to be removed from the game so I know
+exactly how many cards are left to play
+* As a player, I would like to be able to click the cards as many times as required
+until the matching pair displays
 
 [Back to Table of Contents](#table-of-contents)
 
