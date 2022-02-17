@@ -25,6 +25,11 @@
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
    "cSpell.words": [
-      "favourite"
+      "Balsamiq",
+      "favourite",
+      "Wireframe"
+   ],
+   "cSpell.ignoreWords": [
+      "wireframes"
    ]
 }

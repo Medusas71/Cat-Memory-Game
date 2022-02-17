@@ -136,6 +136,17 @@ of "Play Level 2", "Replay Level 1" and "Exit to Main Menu".
 <a id="skeleton"></a>
 ### 4. Skeleton
 
+The wireframes have been created using Balsamiq and were created for Desktop, Tablet and Phone.
+
+Here are the [wireframes](./documents/cat-memory-game.pdf):
+
+* [Home Page Wireframe](./readme-images/wireframes/homepage.png)
+* [Instructions Wireframe](./readme-images/wireframes/instructions.png)
+* [Level 1 - 12 Cards Wireframe](./readme-images/wireframes/level1-12-cards.png)
+* [1st Level Complete Wireframe](./readme-images/wireframes/1st-level-complete.png)
+* [Level 2 - 16 Cards Wireframe](.readme-images/wireframes/level2-16-cards.png)
+* [2nd Level Complete Wireframe](.readme-images/wireframes/2nd-level-complete.png)
+
 <a id="surface"></a>
 ### 5. Surface
 

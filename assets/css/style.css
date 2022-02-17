@@ -9,20 +9,20 @@ body {
     margin-top: 100px;
     height: 400px;
     width: 500px;
-    background-color: rgb(8, 181, 194);
+    background-color: #08b5c2;
     border-radius: 25%;
 }
 
 .heading {
     margin-top: 50px;
     margin-left: 20px;
-    color: black;
+    color: #000000;
     font-size: 60px;
     font-family: "Flavors", sans-serif;
 }
 
 .play, .instructions {
-    color: black;
+    color: #000000;
     font-size: 50px;
     font-family: "Fresca", sans-serif;
 }
