@@ -2,7 +2,6 @@
 
 body {
     background-color: #660099;
-    background-image: url("../images/homepage/cat-background.jpg");
 }
 
 /*----------------------------------------------------Hover*/
@@ -14,6 +13,10 @@ a:hover {
 }
 
 /*----------------------------------------------------index.html*/
+
+.cat-bg {
+    background-image: url("../images/homepage/cat-background.jpg");
+}
 
 .index-box {
     margin-top: 100px;
