@@ -1,4 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Fresca&display=swap');
+
 body {
-    background-color: rgb(84, 6, 156);
+    background-color: #660099;
     background-image: url("../images/homepage/cat-background.jpg");
+}
+
+.index-box {
+    margin-top: 100px;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(8, 181, 194);
+    border-radius: 25%;
+}
+
+.heading {
+    margin-top: 50px;
+    margin-left: 20px;
+    color: black;
+    font-size: 60px;
+    font-family: "Flavors", sans-serif;
+}
+
+.play, .instructions {
+    color: black;
+    font-size: 50px;
+    font-family: "Fresca", sans-serif;
+}
+
+.play {
+    margin-left: 200px;
+}
+
+.instructions {
+    margin-left: 120px;
 }
