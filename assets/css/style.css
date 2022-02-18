@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Flavors&family=Fresca&display=swap');
 
+/*----------------------------------------------------Global Settings*/
+
 body {
     background-color: #660099;
 }
+
+.container {
+    padding: 0 16px;
+}
+
+.text-align {
+    text-align: center;
+} 
 
 /*----------------------------------------------------Hover*/
 
@@ -19,33 +29,25 @@ a:hover {
 }
 
 .index-box {
+    /* margin: 0 auto; */
     margin-top: 100px;
-    height: 400px;
-    width: 500px;
+    min-height: 300px;
+    max-width: 500px;
     background-color: #08b5c2;
     border-radius: 25%;
 }
 
 .heading {
     margin-top: 50px;
-    margin-left: 20px;
     color: #000;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Flavors", sans-serif;
 }
 
 .play, .instructions {
     color: #000;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Fresca", sans-serif;
-}
-
-.play {
-    margin-left: 200px;
-}
-
-.instructions {
-    margin-left: 120px;
 }
 
 /*----------------------------------------------------Modal*/
@@ -55,7 +57,6 @@ a:hover {
     font-family: "Flavors", sans-serif;
     font-size: 40px;
     width: 90%;
-    text-align: center;
 }
 
 .modal-body {
