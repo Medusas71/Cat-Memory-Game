@@ -24,7 +24,7 @@ a:hover {
 
 /*----------------------------------------------------index.html*/
 
-.cat-bg {
+.cat-bg { /*.......Image sourced from pngset and modified for use*/
     background-image: url("../images/homepage/cat-background.jpg");
 }
 

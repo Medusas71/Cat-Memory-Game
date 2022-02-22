@@ -65,7 +65,7 @@ brain functionality
 completing that level
 * As a player, when replaying the level, I would like all the cards to be shuffled
 * As a player, I would like to click a card and the card flips and displays a cat picture
-* As a player, I would like the cards that I matched to be removed from the game so I know
+* As a player, I would like the cards that I matched to stay flipped so I know
 exactly how many cards are left to play
 * As a player, I would like to be able to click the cards as many times as required
 until the matching pair displays
@@ -97,7 +97,7 @@ The features of this project will include:
 * The ability to replay the level that I just played
 * The ability for all the cards to be shuffled when replaying the same level
 * The ability to see a cat when flipping a card
-* Removal of cards that have matched
+* The ability to keep the matching cards flipped
 * The ability to click a particular card again if the cards do not match
 
 <a id="structure"></a>
@@ -148,7 +148,33 @@ Here are the [wireframes](./documents/cat-memory-game.pdf):
 * [2nd Level Complete Wireframe](.readme-images/wireframes/2nd-level-complete.png)
 
 <a id="surface"></a>
-### 5. Surface
+### 5. Surface 
+
+Colour scheme
+
+* I made the background colour of the pages purple #660099 for two reasons. 1. Purple is a royal colour 
+and cats think they are royalty. 2. My favourite colour is purple.
+* I then wanted a blue/green colour to compliment the purple. I selected a Maximum Blue Green #08B5C2.
+* I kept the text colour generic and used black #000 and the hover colour white #FFF.
+
+![4 Colours](./readme-images/website-colours.jpg)
+Colours sourced using [Coolors](https://coolors.co/660099-08b5c2-000000-ffffff)
+
+* The colours were checked through [WebAIM](https://webaim.org/resources/contrastchecker/) to ensure that the colours were accessible.
+
+![WebAIM Contrast Checker](./readme-images/webaim-contrast-checker.jpg)
+
+Typography
+
+* The fonts were sourced from [Google Fonts](https://fonts.google.com/)
+* The Fresca font is the main font used throughout the website with sans-serif as the fallback font.
+This font was chosen as it compliments the Flavors font that is used for the titles.
+* The Flavors font was used for all headings with sans-serif as the fallback font.
+This font was chosen for its funky text that I thought would look good in a game.
+
+Imagery
+
+* The background image for the homepage was sourced from [pngset](https://pngset.com/download-free-png-yaylz)
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -165,6 +191,26 @@ Here are the [wireframes](./documents/cat-memory-game.pdf):
 
 <a id="technologies-used"></a>
 # Technologies Used
+
+Languages Used
+
+1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
+2. [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+Frameworks, Libraries, Programs and Resources Used
+
+1. [Balsamiq](https://balsamiq.com/) - wireframes
+2. [Bootstrap 4.6 CDN](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - to make the website responsive and to use modals
+3. [Git](https://git-scm.com/) - version control
+4. [GitHub](https://github.com/) - hosting service 
+5. [GitPod](https://www.gitpod.io/) - IDE
+6. [Google Fonts](https://fonts.google.com/) - typography
+7. [Slack](https://slack.com/) - main source of assistance from other students, developers and documents/resources
+8. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture and resizing images
+9. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
+10. [W3Schools](https://www.w3schools.com/) - to assist with code
+11. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
+
 
 [Back to Table of Contents](#table-of-contents)
 <a id="testing"></a>
@@ -184,5 +230,9 @@ Here are the [wireframes](./documents/cat-memory-game.pdf):
 
 <a id="credits"></a>
 # Credits
+
+Code
+
+* David Bowers, Code Institute student for his assistance with css positioning via a Webinar
 
 [Back to Table of Contents](#table-of-contents)
