@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-    padding: 0 16px;
     position: relative;
 }
 
@@ -30,7 +29,6 @@ a:hover {
 }
 
 .index-box {
-    /* margin: 0 auto; */
     margin-top: 100px;
     min-height: 300px;
     max-width: 500px;
