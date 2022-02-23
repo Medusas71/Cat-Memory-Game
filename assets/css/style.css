@@ -2,6 +2,10 @@
 
 /*----------------------------------------------------Global Settings*/
 
+header {
+    padding-top: 20px;
+}
+
 body {
     background-color: #660099;
 }
@@ -10,9 +14,29 @@ body {
     position: relative;
 }
 
-.text-align {
+.text-align { /*........used text-align as a global setting as mentioned in David Bowers webinar*/
     text-align: center;
 } 
+
+h1 {
+    color: #000;
+    font-size: 50px;
+    font-family: "Flavors", sans-serif;
+}
+
+h2 {
+    color:#000;
+    font-size: 20px;
+    font-family: "Flavors", sans-serif;
+}
+
+.time .pairs .moves b, strong {
+    color: #E0E1E4;
+    font-size: 15px;
+    font-family: "Flavors", sans-serif;
+    letter-spacing: 1px;
+}
+
 
 /*----------------------------------------------------Hover*/
 
@@ -75,4 +99,23 @@ a:hover {
     color: #000;
     font-family: "Fresca", sans-serif;
     font-size: 20px;
+}
+
+/*----------------------------------------------------level1.html*/
+
+
+
+/*----------------------------------------------------Media Queries*/
+
+/*-------------------------medium devices (tablets, 768px and up)---*/
+
+@media screen and (min-width: 768px) {
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .time .pairs .moves b, strong {
+        font-size: 35px;
+    }
 }
