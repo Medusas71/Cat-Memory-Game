@@ -10,9 +10,9 @@ body {
     background-color: #660099;
 }
 
-.container {
+/* .container {
     position: relative;
-}
+} */
 
 .text-align { /*........used text-align as a global setting as mentioned in David Bowers webinar*/
     text-align: center;
@@ -35,6 +35,10 @@ h2 {
     font-size: 15px;
     font-family: "Flavors", sans-serif;
     letter-spacing: 1px;
+}
+
+.card {
+    background-color: transparent; /*---credits to stack overflow - see bugs/fixes in testing.md*/
 }
 
 
@@ -76,7 +80,6 @@ a:hover {
 /*----------------------------------------------------Footer*/
 
 .copyright-style {
-    position: absolute;
     color: #FFF;
     font-family: "Fresca", sans-serif;
     font-size: 12px;
@@ -103,9 +106,21 @@ a:hover {
 
 /*----------------------------------------------------level1.html*/
 
-
+.card-img-top {
+    border: 3px solid #000;
+    border-radius: 10%;
+}
 
 /*----------------------------------------------------Media Queries*/
+
+/*-------------------------small devices (landscape phones, 576px and up)---*/
+
+@media screen and (min-width: 576px) {
+    
+    .container, .copyright-style {
+        position: absolute;
+    }
+}
 
 /*-------------------------medium devices (tablets, 768px and up)---*/
 
