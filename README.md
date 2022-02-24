@@ -174,7 +174,9 @@ This font was chosen for its funky text that I thought would look good in a game
 
 Imagery
 
-* The background image for the homepage was sourced from [pngset](https://pngset.com/download-free-png-yaylz)
+* The background image for the homepage was sourced from [pngset](https://pngset.com/download-free-png-yaylz) and 
+was modified for use.
+* The same image used in the homepage background, has been used on the back of each card.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -200,16 +202,19 @@ Languages Used
 Frameworks, Libraries, Programs and Resources Used
 
 1. [Balsamiq](https://balsamiq.com/) - wireframes
-2. [Bootstrap 4.6 CDN](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - to make the website responsive and to use modals
-3. [Git](https://git-scm.com/) - version control
-4. [GitHub](https://github.com/) - hosting service 
-5. [GitPod](https://www.gitpod.io/) - IDE
-6. [Google Fonts](https://fonts.google.com/) - typography
-7. [Slack](https://slack.com/) - main source of assistance from other students, developers and documents/resources
-8. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture and resizing images
-9. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
-10. [W3Schools](https://www.w3schools.com/) - to assist with code
-11. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
+1. [Bootstrap 4.6 CDN](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - to make the website responsive and to use modals
+1. [Coolors](https://coolors.co/) - to display colour palettes
+1. [Git](https://git-scm.com/) - version control
+1. [GitHub](https://github.com/) - hosting service 
+1. [GitPod](https://www.gitpod.io/) - IDE
+1. [Google Fonts](https://fonts.google.com/) - typography
+1. [pngset](https://pngset.com/) - for background cat image
+1. [Slack](https://slack.com/) - main source of assistance from other students, developers and documents/resources
+1. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture, resizing images and adding background colour to images
+1. [Stack overflow](https://stackoverflow.com/) - for resolving specific issues
+1. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
+1. [W3Schools](https://www.w3schools.com/) - to assist with code
+1. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
 
 
 [Back to Table of Contents](#table-of-contents)
