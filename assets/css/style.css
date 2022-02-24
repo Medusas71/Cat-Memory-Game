@@ -33,12 +33,17 @@ h2 {
 .time .pairs .moves b, strong {
     color: #E0E1E4;
     font-size: 15px;
-    font-family: "Flavors", sans-serif;
+    font-family: "Fresca", sans-serif;
     letter-spacing: 1px;
+}
+
+.margin { /*---margin set for cards*/
+    margin: 0 10px 2px 10px;
 }
 
 .card {
     background-color: transparent; /*---credits to stack overflow - see bugs/fixes in testing.md*/
+    border: none; /*---remove automatic border set by Bootstrap*/
 }
 
 
