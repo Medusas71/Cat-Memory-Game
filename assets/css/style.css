@@ -92,7 +92,7 @@ button:hover {
 /*----------------------------------------------------index.html*/
 
 .cat-bg { /*.......Image sourced from pngset and modified for use*/
-    background-image: url("../images/homepage/cat-background.jpg");
+    background-image: url("../images/cat-background.jpg");
 }
 
 .index-box {
@@ -146,7 +146,7 @@ button:hover {
 
 /*----------------------------------------------------level1.html*/
 
-.card-img-top { /*---- sourced from Bootstrap*/
+.card-front { /*---- sourced from Bootstrap*/
     border: 3px solid #000;
     border-radius: 10%;
 }
