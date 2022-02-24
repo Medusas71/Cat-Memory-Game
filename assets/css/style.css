@@ -10,9 +10,9 @@ body {
     background-color: #660099;
 }
 
-/* .container {
+.container {
     position: relative;
-} */
+}
 
 .text-align { /*........used text-align as a global setting as mentioned in David Bowers webinar*/
     text-align: center;
@@ -80,12 +80,14 @@ a:hover {
 /*----------------------------------------------------Footer*/
 
 .copyright-style {
+    position: absolute;
     color: #FFF;
     font-family: "Fresca", sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
+    line-height: 0;
     bottom: 0;
-    padding: 5px;
+    padding: 2px;
     width: 100%;
 }
 
@@ -112,15 +114,6 @@ a:hover {
 }
 
 /*----------------------------------------------------Media Queries*/
-
-/*-------------------------small devices (landscape phones, 576px and up)---*/
-
-@media screen and (min-width: 576px) {
-    
-    .container, .copyright-style {
-        position: absolute;
-    }
-}
 
 /*-------------------------medium devices (tablets, 768px and up)---*/
 
