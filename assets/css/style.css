@@ -80,7 +80,7 @@ a {
 /*----------------------------------------------------Hover*/
 
 a:hover {
-    color: #fff;
+    color: #E0E1E4;
     text-decoration: none;
     cursor: pointer;
 }
@@ -119,7 +119,7 @@ button:hover {
 /*----------------------------------------------------Footer*/
 
 .copyright-style {
-    color: #FFF;
+    color: #E0E1E4;
     font-family: "Fresca", sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
@@ -168,5 +168,4 @@ button:hover {
     button {
         font-size: 40px;
     }
-
 }

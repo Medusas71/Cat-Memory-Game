@@ -155,10 +155,15 @@ Colour scheme
 * I made the background colour of the pages purple #660099 for two reasons. 1. Purple is a royal colour 
 and cats think they are royalty. 2. My favourite colour is purple.
 * I then wanted a blue/green colour to compliment the purple. I selected a Maximum Blue Green #08B5C2.
-* I kept the text colour generic and used black #000 and the hover colour white #FFF.
+* I kept the text colour generic and used Black #000 in some parts and a Gainsboro colour #E0E1E4 for some of the other 
+text, such as copyright information in the footer, the numbers on level 1 and level 2 and the exit and restart game buttons. 
+I originally used white, however the white was too bright on the screen.
+* The hover colour is Gainsboro #E0E1E4 when hovered over the black text on the homepage.
+* The buttons hover colour on Level 1 and Level 2 is black.
+
 
 ![4 Colours](./readme-images/website-colours.jpg)
-Colours sourced using [Coolors](https://coolors.co/660099-08b5c2-000000-ffffff)
+Colours sourced using [Coolors](https://coolors.co/660099-08b5c2-000000-e0e1e4)
 
 * The colours were checked through [WebAIM](https://webaim.org/resources/contrastchecker/) to ensure that the colours were accessible.
 
