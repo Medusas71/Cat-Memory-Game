@@ -2,16 +2,23 @@
 
 /*----------------------------------------------------Global Settings*/
 
+html { /*-- added height to html to assist with the footer - see bugs/fixes in TESTING.md*/
+    height: 100%;
+}
+
 header {
     padding-top: 20px;
 }
 
-body {
+body { /* added min-height, display and flex direction to assist with the footer - see bugs/fixes in TESTING.md*/
     background-color: #660099;
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 
-.container {
-    position: relative; /*.....used position: relative to assist with the footer - see bugs/fixes in TESTING.MD */
+footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TESTING.md*/
+    margin-top: auto;
 }
 
 .text-align { /*........used text-align as a global setting as mentioned in David Bowers webinar*/
@@ -112,7 +119,6 @@ button:hover {
 /*----------------------------------------------------Footer*/
 
 .copyright-style {
-    position: absolute; /*.....used position: absolute to assist with the footer - see bugs/fixes in TESTING.MD */
     color: #FFF;
     font-family: "Fresca", sans-serif;
     font-size: 12px;
