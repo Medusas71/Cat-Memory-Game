@@ -201,6 +201,9 @@ Languages Used
 
 Frameworks, Libraries, Programs and Resources Used
 
+<!-- Created Ordered Lists via markdown style guide. I didn't want to have to keep updating the numbers in this list
+when I added more information to this -->
+
 1. [Balsamiq](https://balsamiq.com/) - wireframes
 1. [Bootstrap 4.6 CDN](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - to make the website responsive and to use modals
 1. [Coolors](https://coolors.co/) - to display colour palettes
@@ -208,6 +211,7 @@ Frameworks, Libraries, Programs and Resources Used
 1. [GitHub](https://github.com/) - hosting service 
 1. [GitPod](https://www.gitpod.io/) - IDE
 1. [Google Fonts](https://fonts.google.com/) - typography
+1. [Markdown Guide](https://www.markdownguide.org/basic-syntax/) - for creating this numbered list and not having to number each item individually
 1. [pngset](https://pngset.com/) - for background cat image
 1. [Slack](https://slack.com/) - main source of assistance from other students, developers and documents/resources
 1. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture, resizing images and adding background colour to images
