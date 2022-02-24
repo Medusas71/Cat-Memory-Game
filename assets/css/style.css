@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    position: relative;
+    position: relative; /*.....used position: relative to assist with the footer - see bugs/fixes in TESTING.MD */
 }
 
 .text-align { /*........used text-align as a global setting as mentioned in David Bowers webinar*/
@@ -80,7 +80,7 @@ a:hover {
 /*----------------------------------------------------Footer*/
 
 .copyright-style {
-    position: absolute;
+    position: absolute; /*.....used position: absolute to assist with the footer - see bugs/fixes in TESTING.MD */
     color: #FFF;
     font-family: "Fresca", sans-serif;
     font-size: 12px;
@@ -91,7 +91,7 @@ a:hover {
     width: 100%;
 }
 
-/*----------------------------------------------------Modal*/
+/*----------------------------------------------------Modal - courtesy of Bootstrap*/
 
 .modal-title {
     color: #000;
@@ -108,7 +108,7 @@ a:hover {
 
 /*----------------------------------------------------level1.html*/
 
-.card-img-top {
+.card-img-top { /*---- sourced from Bootstrap*/
     border: 3px solid #000;
     border-radius: 10%;
 }
@@ -124,6 +124,6 @@ a:hover {
     }
 
     .time .pairs .moves b, strong {
-        font-size: 35px;
+        font-size: 35px; /*-----required to see the wording on larger screens*/
     }
 }
