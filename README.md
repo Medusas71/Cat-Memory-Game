@@ -182,6 +182,7 @@ Imagery
 * The background image for the homepage was sourced from [pngset](https://pngset.com/download-free-png-yaylz) and 
 was modified for use.
 * The same image used in the homepage background, has been used on the back of each card.
+* All cat images used for the cards were sourced from [Unsplash](https://unsplash.com/).
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -222,6 +223,7 @@ when I added more information to this -->
 1. [Snagit](https://www.techsmith.com/screen-capture.html) - screen capture, resizing images and adding background colour to images
 1. [Stack overflow](https://stackoverflow.com/) - for resolving specific issues
 1. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
+1. [Unsplash](https://unsplash.com/) - for cat images on cards
 1. [W3Schools](https://www.w3schools.com/) - to assist with code
 1. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
 

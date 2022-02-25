@@ -146,9 +146,13 @@ button:hover {
 
 /*----------------------------------------------------level1.html*/
 
-.card-front { /*---- sourced from Bootstrap*/
+.card-back { /*---- sourced from Bootstrap*/
     border: 3px solid #000;
     border-radius: 10%;
+}
+
+.card-front {
+    object-fit: cover;
 }
 
 /*----------------------------------------------------Media Queries*/
