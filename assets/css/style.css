@@ -49,8 +49,25 @@ h2 {
 }
 
 .card {
+    position: relative;
+    width: 150px;
+    height: 100px;
     background-color: transparent; /*---credits to stack overflow - see bugs/fixes in testing.md*/
     border: none; /*---remove automatic border set by Bootstrap*/
+}
+
+.card-back { /*---- sourced from Bootstrap*/
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 10%;
+    height: 100%;
+    width: 100%;
+}
+
+.card-front {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
 }
 
 button {
@@ -146,14 +163,7 @@ button:hover {
 
 /*----------------------------------------------------level1.html*/
 
-.card-back { /*---- sourced from Bootstrap*/
-    border: 3px solid #000;
-    border-radius: 10%;
-}
 
-.card-front {
-    object-fit: cover;
-}
 
 /*----------------------------------------------------Media Queries*/
 
