@@ -6,10 +6,6 @@ html { /*-- added height to html to assist with the footer - see bugs/fixes in T
     height: 100%;
 }
 
-header {
-    padding-top: 20px;
-}
-
 body { /* added min-height, display and flex direction to assist with the footer - see bugs/fixes in TESTING.md*/
     background-color: #660099;
     min-height: 100%; 
@@ -17,13 +13,17 @@ body { /* added min-height, display and flex direction to assist with the footer
     flex-direction: column;
 }
 
-footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TESTING.md*/
-    margin-top: auto;
-}
-
 .text-align { /*........used text-align as a global setting as mentioned in David Bowers webinar*/
     text-align: center;
 } 
+
+.container-margin {
+    width: 640px;
+}
+
+header {
+    padding-top: 20px;
+}
 
 h1 {
     color: #000;
@@ -49,31 +49,25 @@ h2 {
 }
 
 .card {
-    position: relative;
     width: 150px;
-    height: 100px;
-    background-color: transparent; /*---credits to stack overflow - see bugs/fixes in testing.md*/
+    height: 150px;
+    perspective: 1000px;
+    background-color: transparent; ; /*---credits to stack overflow - see bugs/fixes in testing.md*/
     border: none; /*---remove automatic border set by Bootstrap*/
 }
 
-.card-back { /*---- sourced from Bootstrap*/
+.card-back, .card-front {
+    width: 100%;
+    height: 100%;
     position: absolute;
     border: 3px solid #000;
-    border-radius: 10%;
-    height: 100%;
-    width: 100%;
-}
-
-.card-front {
-    height: 100%;
-    width: 100%;
     border-radius: 10%;
 }
 
 button {
     border: 3px solid #000;
     background-color:#660099;
-    color: #E0E1E4;
+    color: #000;
     font-size: 15px;
     font-family: "Fresca", sans-serif;
     letter-spacing: 1px;
@@ -82,16 +76,33 @@ button {
     border-radius: 5%;
 }
 
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
 a {
-    color: #E0E1E4;
+    color: #000;
+}
+
+
+/*----------------------------------------------------index.html*/
+
+.cat-bg { /*.......Image sourced from pngset and modified for use*/
+    background-image: url("../images/cat-background.jpg");
+}
+
+.index-box {
+    margin-top: 50px;
+    min-height: 300px;
+    max-width: 500px;
+    background-color: #08b5c2;
+    border-radius: 25%;
+}
+
+.heading {
+    margin-top: 50px;
+}
+
+.play, .instructions {
+    color: #000;
+    font-size: 40px;
+    font-family: "Fresca", sans-serif;
 }
 
 /*----------------------------------------------------Hover*/
@@ -106,45 +117,6 @@ button:hover {
     background-color: #000;
 }
 
-/*----------------------------------------------------index.html*/
-
-.cat-bg { /*.......Image sourced from pngset and modified for use*/
-    background-image: url("../images/cat-background.jpg");
-}
-
-.index-box {
-    margin-top: 100px;
-    min-height: 300px;
-    max-width: 500px;
-    background-color: #08b5c2;
-    border-radius: 25%;
-}
-
-.heading {
-    margin-top: 50px;
-    color: #000;
-    font-size: 50px;
-    font-family: "Flavors", sans-serif;
-}
-
-.play, .instructions {
-    color: #000;
-    font-size: 40px;
-    font-family: "Fresca", sans-serif;
-}
-
-/*----------------------------------------------------Footer*/
-
-.copyright-style {
-    color: #E0E1E4;
-    font-family: "Fresca", sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    line-height: 0;
-    bottom: 0;
-    padding: 2px;
-    width: 100%;
-}
 
 /*----------------------------------------------------Modal - courtesy of Bootstrap*/
 
@@ -161,11 +133,22 @@ button:hover {
     font-size: 20px;
 }
 
-/*----------------------------------------------------level1.html*/
+/*----------------------------------------------------Footer*/
 
+footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TESTING.md*/
+    margin-top: auto;
+}
 
-
-/*----------------------------------------------------Media Queries*/
+.copyright-style {
+    color: #E0E1E4;
+    font-family: "Fresca", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 0;
+    bottom: 0;
+    padding: 2px;
+    width: 100%;
+}
 
 /*-------------------------medium devices (tablets, 768px and up)---*/
 
@@ -180,6 +163,7 @@ button:hover {
     }
 
     button {
-        font-size: 40px;
+        font-size: 20px;
     }
 }
+
