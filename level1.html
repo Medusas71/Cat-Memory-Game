@@ -14,7 +14,7 @@
 <body> 
   <!----------Game Header----------> 
   <header class="header">
-    <div class="container-fluid container-margin text-align">
+    <div class="container-fluid text-align">
       <div class="row">
         <div class="col text-align">
           <h1>Cat Memory Game</h1>
@@ -42,7 +42,7 @@
   </header>
   <!-- Cat Memory Game Level 1 - 12 cards - 6 sets-->
   <main>
-    <div class="container"> <!-- used Bootstrap grid for layout - columns/rows -->
+    <div class="container-fluid"> <!-- used Bootstrap grid for layout - columns/rows -->
       <div class="row margin">
         <!--------- Card Set 1--------->
         <div class="col-3 p-1"> <!-- used Bootstrap for padding-->   
@@ -128,15 +128,18 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <button type="button" class="float-left">
-            <a href="index.html">Exit</a>
-          </button>
-          <button type="button" class="float-right">
-            <a href="index.html">Restart Game</a>
-          </button>
+        <div class="col">
+            <div class="button text-align">
+              <a href="index.html">Exit</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="button text-align float-right">
+              <a href="index.html">Restart Game</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

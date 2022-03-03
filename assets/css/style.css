@@ -17,9 +17,9 @@ body { /* added min-height, display and flex direction to assist with the footer
     text-align: center;
 } 
 
-.container-margin {
+/* .container-margin {
     width: 640px;
-}
+} */
 
 header {
     padding-top: 20px;
@@ -49,11 +49,12 @@ h2 {
 }
 
 .card {
-    width: 150px;
-    height: 150px;
+    width: 20vw;
+    height: 20vh;
     perspective: 1000px;
     background-color: transparent; ; /*---credits to stack overflow - see bugs/fixes in testing.md*/
     border: none; /*---remove automatic border set by Bootstrap*/
+    border-radius: 10%;
 }
 
 .card-back, .card-front {
@@ -64,7 +65,7 @@ h2 {
     border-radius: 10%;
 }
 
-button {
+.button {
     border: 3px solid #000;
     background-color:#660099;
     color: #000;
@@ -72,8 +73,11 @@ button {
     font-family: "Fresca", sans-serif;
     letter-spacing: 1px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px;
     cursor: pointer;
     border-radius: 5%;
+    display: inline-block;
 }
 
 a {
@@ -113,7 +117,7 @@ a:hover {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #000;
 }
 
