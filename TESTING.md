@@ -64,4 +64,7 @@ There was a future issue with this - see Level 1 Page below.
 * **Fix**: I found the answer on [Stack Overflow](https://stackoverflow.com/questions/45408037/how-to-remove-background-color-in-bootstrap) 
 where I used background-color: transparent, to remove the Bootstrap default background colour.
 
+**3. Issue**:
+    When hovering over the corner of the Exit and Restart Game buttons, the button would change background colour to black, however the words would not change colour until the cursor is closer to the letters. So there was a moment when the button is all black.
+* **Fix**: The issue was discussed with the channel lead for MS2 project, Scott Boning. Upon advice received I removed the div from above and below the <a> tag and placed the classes from the div in the <a> tag. This gave a smooth transition ensuring that the letters change colour immediately when hovering. The delay had been removed.
 

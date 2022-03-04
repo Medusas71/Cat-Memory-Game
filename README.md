@@ -250,5 +250,6 @@ when I added more information to this -->
 Code
 
 * David Bowers, Code Institute student for his assistance with css positioning via a Webinar
+* Scott Boning, Code Institute student for his assistance with the html and css
 
 [Back to Table of Contents](#table-of-contents)
