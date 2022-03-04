@@ -40,7 +40,7 @@ h2 {
     letter-spacing: 1px;
 }
 
-.margin { /*---margin set for cards*/
+.card-margin { /*---margin set for cards*/
     margin: 0 10px 2px 10px;
 }
 
@@ -67,7 +67,7 @@ h2 {
     font-size: 15px;
     font-family: "Fresca", sans-serif;
     letter-spacing: 1px;
-    margin-top: 20px 20px 20px 5px;
+    margin: 20px 20px 20px 5px;
     padding: 2px;
     cursor: pointer;
     border-radius: 5%;
@@ -175,7 +175,7 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
         font-size: 35px; /*-----required to see the wording on larger screens*/
     }
 
-    .margin {
+    .card-margin {
         margin: 0 150px 2px 150px;
     }
 
