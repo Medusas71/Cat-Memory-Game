@@ -186,8 +186,8 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
     
     .button {
         font-size: 20px;
-        margin-right: 100px;
-        margin-left: 100px;
+        /* margin-right: 200px; */
+        margin-left: 150px;
         }
 }
 
