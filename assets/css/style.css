@@ -37,6 +37,19 @@ h2 {
 a {    color: #000;
 }
 
+.game {
+    /* height: 580px; */
+    /* width: 580px; */
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 35px;
+    margin-right: 35px; */
+    /* padding: 5px; */
+    /* perspective: 1000px; */
+}
+
 .time .pairs .moves b, strong {
     color: #E0E1E4;
     font-size: 15px;
@@ -152,6 +165,10 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
 
 @media screen and (min-width: 576px) {
 
+    .container-fluid {
+        width: 80%;
+    }
+    
     .card { /* assistance by Scott Boning - see bugs/fixes in TESTING.md*/
         width: 5em;
         height: 5em;
@@ -162,34 +179,46 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
 
 @media screen and (min-width: 768px) {
 
+    .container-fluid {
+        width: 70%;
+    }
+    
     h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .time .pairs .moves b, strong {
-        font-size: 35px; /*-----required to see the wording on larger screens*/
+        font-size: 30px; /*-----required to see the wording on larger screens*/
     }
 
     .card { /* assistance by Scott Boning - see bugs/fixes in TESTING.md*/
-        width: 6em;
-        height: 6em;
+        width: 5em;
+        height: 5em;
         }
 }
 
 /*-------------------------large devices (desktops, 992px and up)---*/
 @media screen and (min-width: 992px) {
 
+    .container-fluid {
+        width: 60%;
+    }
+    
     .card { /* assistance by Scott Boning - see bugs/fixes in TESTING.md*/
-        width: 8em;
-        height: 8em;
+        width: 6em;
+        height: 6em;
         }
 }
 
 /*-------------------------extra large devices (large desktops, 1200px and up)---*/
 @media screen and (min-width: 1200px) {
 
+    .container-fluid {
+        width: 60%;
+    }
+    
     .card { /* assistance by Scott Boning - see bugs/fixes in TESTING.md*/
-        width: 9em;
-        height: 9em;
+        width: 7em;
+        height: 7em;
         }
 }
