@@ -24,15 +24,15 @@
         <!----------Game Statistics---------->
         <div class="col-4 text-align">
           <h2>Time</h2>
-          <p class="time"><strong>90</strong></p>
+          <p class="game-stats"><strong>90</strong></p>
         </div>
         <div class="col-4 text-align">
           <h2>Pairs</h2>
-          <p class="pairs"><strong>12</strong></p>
+          <p class="game-stats"><strong>12</strong></p>
         </div>
         <div class="col-4 text-align">
           <h2>Moves</h2>
-          <p class="moves"><strong>100</strong></p>
+          <p class="game-stats"><strong>100</strong></p>
         </div>
       </div>
     </div>
@@ -40,87 +40,111 @@
 <!-- Cat Memory Game Level 1 - 12 cards - 6 sets-->
 <main class="game-margin">
   <div class="container-fluid"> <!-- used Bootstrap grid for layout - columns -->
-    <div class="row game">
+    <div class="row" id="game">
       <!--------- Card Set 1--------->
       <div class="col-3 p-1"> <!-- used Bootstrap for padding-->   
-        <div class="card"> 
-          <img class="card-front img-fluid" src="assets/images/cat1.jpg" alt="cat card"> 
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">      
+        <div class="flip-card">
+          <div class="card"> 
+            <img class="card-front img-fluid" src="assets/images/cat1.jpg" alt="cat card"> 
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">      
+          </div>
         </div>
       </div>
-      <div class="col-3 p-1">  
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat1.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">      
-        </div>            
+      <div class="col-3 p-1"> 
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat1.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">      
+          </div>
+        </div>
       </div>
       <!--------- Card Set 2---------> 
-      <div class="col-3 p-1">  
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat2.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+      <div class="col-3 p-1">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat2.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+          </div>
         </div>
       </div>
-      <div class="col-3 p-1"> 
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat2.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+      <div class="col-3 p-1">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat2.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+          </div>
         </div>
       </div>
     </div>
-    <div class="row game">
+    <div class="row" id="game">
       <!--------- Card Set 3--------->
-      <div class="col-3 p-1">  
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat3.jpg" alt="cat card">      
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">       
+      <div class="col-3 p-1">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat3.jpg" alt="cat card">      
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">       
+          </div>
         </div>
       </div>
-      <div class="col-3 p-1"> 
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat3.jpg" alt="cat card">          
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
-        </div>            
+      <div class="col-3 p-1">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat3.jpg" alt="cat card">          
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+          </div>
+        </div>           
       </div>
       <!--------- Card Set 4--------->    
-      <div class="col-3 p-1">  
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat4.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+      <div class="col-3 p-1">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat4.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+          </div>
         </div>
       </div>
       <div class="col-3 p-1">
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat4.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat4.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+          </div>
         </div>
       </div>
     </div>
-    <div class="row game">
+    <div class="row" id="game">
       <!--------- Card Set 5--------->
       <div class="col-3 p-1">
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat5.jpg" alt="cat card">     
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">   
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat5.jpg" alt="cat card">     
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">   
+          </div>
         </div>
       </div>
       <div class="col-3 p-1">
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat5.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">     
-        </div>            
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat5.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">     
+          </div>
+        </div>           
       </div>
       <!--------- Card Set 6--------->   
       <div class="col-3 p-1">
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat6.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat6.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+          </div>
         </div>
       </div> 
       <div class="col-3 p-1">
-        <div class="card">
-          <img class="card-front img-fluid" src="assets/images/cat6.jpg" alt="cat card">
-          <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+        <div class="flip-card">
+          <div class="card">
+            <img class="card-front img-fluid" src="assets/images/cat6.jpg" alt="cat card">
+            <img class="card-back img-fluid" src="assets/images/card-back.jpg" alt="card back">
+          </div>
         </div>
       </div>
     </div> 
