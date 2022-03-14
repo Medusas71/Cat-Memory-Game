@@ -90,7 +90,7 @@ a {    color: #000;
     position: absolute;
     border: 3px solid #000;
     border-radius: 10%;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
 }
 
 
@@ -236,5 +236,18 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
     .card {
         width: 7em;
         height: 7em;
+        }
+}
+
+/*-------------------------extra extra large devices (extra large desktops, 1920px and up)---*/
+@media screen and (min-width: 1920px) {
+
+    .container-fluid {
+        width: 50%;
+    }
+    
+    .card {
+        width: 8em;
+        height: 8em;
         }
 }
