@@ -37,6 +37,10 @@ h2 {
 a {    color: #000;
 }
 
+.container-fluid {
+    width: 80%;
+}
+
 /*----------------------------------------------------Game Statistics*/
 
 .game-stats {
@@ -48,10 +52,9 @@ a {    color: #000;
 
 /*----------------------------------------------------Cards*/
 
-.flip-card {
+/* .flip-card {
     background-color: transparent;
-    /* perspective: 1000px; */
-}
+} */
 
 .card {
     position: relative;
@@ -61,13 +64,27 @@ a {    color: #000;
     border: none; /*---remove automatic border set by Bootstrap*/
     border-radius: 10%;
     cursor: pointer;
-    transition: transform 0.8s;
+    transition: all 0.8s ease;
     transform-style: preserve-3d;
 }
 
-.card, .flip-card {
+/* .flip-card {
     transform: rotateY(180deg);
-}
+} */
+
+.card .card-front {
+    transform: rotateY(180deg);
+  }
+  .card .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  .card.flipped .card-front {
+    transform: rotateY(0deg);
+  }
+  .card.flipped .card-back {
+    transform: rotateY(-180deg);
+  }
 
 /* .flip-card:hover .card {
     transform: rotateY(180deg);
@@ -175,8 +192,16 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
 
 @media screen and (min-width: 576px) {
 
-    .container-fluid {
+    /* .container-fluid {
         width: 80%;
+    } */
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .game-stats {
+        font-size: 30px; /*-----required to see the wording on larger screens*/
     }
     
     .card {
@@ -184,6 +209,9 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
         height: 5em;
         }
     
+    .button {    
+        font-size: 20px;
+    }    
     }
 /*-------------------------medium devices (tablets, 768px and up)---*/
 
@@ -191,14 +219,6 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
 
     .container-fluid {
         width: 70%;
-    }
-    
-    h2 {
-        font-size: 35px;
-    }
-
-    .game-stats {
-        font-size: 30px; /*-----required to see the wording on larger screens*/
     }
 
     .card {
@@ -218,6 +238,10 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
         width: 6em;
         height: 6em;
         }
+
+    .button {    
+        font-size: 25px;
+    }
 }
 
 /*-------------------------extra large devices (large desktops, 1200px and up)---*/
@@ -231,6 +255,10 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
         width: 7em;
         height: 7em;
         }
+
+    .button {
+        font-size: 30px;
+    }
 }
 
 /*-------------------------extra extra large devices (extra large desktops, 1920px and up)---*/
@@ -239,9 +267,25 @@ footer { /*-- added margin-top to assist with the footer - see bugs/fixes in TES
     .container-fluid {
         width: 50%;
     }
+
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 50px;
+    }
+    
+    .game-stats {
+        font-size: 40px;
+    }
     
     .card {
-        width: 8em;
-        height: 8em;
+        width: 10em;
+        height: 10em;
         }
+
+    .button {     
+        font-size: 40px;
+    }
 }
