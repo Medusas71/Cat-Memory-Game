@@ -37,18 +37,7 @@ h2 {
 a {    color: #000;
 }
 
-/* .game { */
-    /* height: 580px; */
-    /* width: 580px; */
-    /* align-items: center; */
-    /* justify-content: center;
-    display: flex;
-    flex-wrap: wrap; */
-    /* margin-left: 35px;
-    margin-right: 35px; */
-    /* padding: 5px; */
-    /* perspective: 1000px; */
-/* } */
+/*----------------------------------------------------Game Statistics*/
 
 .game-stats {
     color: #E0E1E4;
@@ -57,16 +46,11 @@ a {    color: #000;
     letter-spacing: 1px;
 }
 
-.game-margin {
-    margin-left: 50px;
-    margin-right: 50px;
-}
+/*----------------------------------------------------Cards*/
 
 .flip-card {
     background-color: transparent;
-    /* width: 300px; */
-    /* height: 200px; */
-    perspective: 1000px;
+    /* perspective: 1000px; */
 }
 
 .card {
@@ -76,13 +60,18 @@ a {    color: #000;
     background-color: transparent; /*---credits to stack overflow - see bugs/fixes in testing.md*/
     border: none; /*---remove automatic border set by Bootstrap*/
     border-radius: 10%;
+    cursor: pointer;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .card {
+.card, .flip-card {
     transform: rotateY(180deg);
 }
+
+/* .flip-card:hover .card {
+    transform: rotateY(180deg);
+} */
 
 .card-back, .card-front {
     width: 100%;
@@ -90,8 +79,14 @@ a {    color: #000;
     position: absolute;
     border: 3px solid #000;
     border-radius: 10%;
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
 }
+
+.card-front {
+    transform: rotateY(180deg);
+}
+
+/*----------------------------------------------------Button*/
 
 .button {
     border: 3px solid #000;
