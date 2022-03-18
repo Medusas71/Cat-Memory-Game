@@ -54,6 +54,7 @@ a {    color: #000;
 
 /* .flip-card {
     background-color: transparent;
+    transform: rotateY(180deg);
 } */
 
 .card {
@@ -68,9 +69,8 @@ a {    color: #000;
     transform-style: preserve-3d;
 }
 
-/* .flip-card {
-    transform: rotateY(180deg);
-} */
+/* copied from https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick */
+/* Use CSS classes to toggle */
 
 .card .card-front {
     transform: rotateY(180deg);
@@ -85,10 +85,6 @@ a {    color: #000;
   .card.flipped .card-back {
     transform: rotateY(-180deg);
   }
-
-/* .flip-card:hover .card {
-    transform: rotateY(180deg);
-} */
 
 .card-back, .card-front {
     width: 100%;
