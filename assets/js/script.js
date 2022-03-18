@@ -36,22 +36,34 @@ for (let firstCard of document.querySelectorAll(".card")) {
 //       }};
 // }
 
-// https://stackoverflow.com/questions/56265599/trying-to-compare-classes-of-different-elements
-//check for 2 matching squares
-function checkIfMatches() {
+// On click of second card
+// A. Turn Over
+// B. Compare with the first card
+// C. If same, keep both cards flipped
+// D. If not, flip cards over to back image
 
-  let elements = document.getElementsByClassName(".card")
-  let first = elements[0].getElementsByTagName('i')[0]
-  let second = elements[1].getElementsByTagName('i')[0]
-  let matches = first.classList.length === second.classList.length
-  first.classList.forEach(entry => matches = matches && second.classList.contains(entry))
-  console.log(matches)
-  
-  // matches ? disable() : unflip();
+const secondCard = document.getElementsByClassName("card");
 
+card.addEventListener("onclick", flipCard);
+
+function flipCard() {
+    card.classList.toggle("flipCard");
 }
 
-checkIfMatches()
+secondCard(flipCard);
+
+if (secondCard === firstCard) {
+    //then stay flipped
+} else {
+    //flip both cards back over
+} 
+
+secondCard(stayFlipped);
+
+
+// Need to be able to stop the user from clicking more than 2 cards in each go and click each card
+
+
 
 // https://www.w3schools.com/jsref/met_element_removeeventlistener.asp
 // Remove Event Listener if cards match
@@ -61,3 +73,26 @@ function cardsMatch() {
   secondCard.removeEventListener("click", "flipped");
 }
 
+//https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+// Upon starting the game, the timer needs to start counting down
+
+var timeleft = 90;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Finished";
+  } else {
+    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+  }
+  timeleft -= 1;
+}, 1000);
+
+//Upon each click, the moves need to increase
+
+
+
+//once a pair is found, the pairs need to increase
+
+// once all pairs are found need a modal to say pawulations (insert paw)
+
+// if 2 cards are different then flip both cards back over
