@@ -17,35 +17,47 @@ return array;
 console.log(shuffleArray);
 }
 
-
-
-
-
 // borrowed from https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick
 
-// My flip card
-  for (let firstCard of document.querySelectorAll(".card")) {  
-    firstCard.addEventListener("click", () => {
-        firstCard.classList.toggle("flipped");
-        console.log("flipped");
-      });
+// Flip Card
+
+for (let firstCard of document.querySelectorAll(".card")) {  
+  firstCard.addEventListener("click", () => {
+      firstCard.classList.toggle("flipped");
+      console.log("flipped");
+    });
 }
 
-
-
-// function (compareCards) {
-//   let matches = firstCard.dataset.id === secondCard.dataset.id;
-//   return matches ? matchedCards() : unmatchedCards()
+// for (let secondCard of document.querySelectorAll(".card")) {
+//     secondCard.addEventListener("click", () => {
+//       secondCard.classList.toggle("flipped");
+//       if (firstCard === secondCard) {disable === "click";
+//       } else {firstCard != secondCard.classList.toggle("flipped");
+//       }};
 // }
 
-// borrowed from https://stackoverflow.com/questions/51558543/how-to-compare-if-two-cards-has-matched-using-jquery
+// https://stackoverflow.com/questions/56265599/trying-to-compare-classes-of-different-elements
+//check for 2 matching squares
+function checkIfMatches() {
 
-// compare two class selected
-// if ($('.selected').length == 2) {
-//   // first and last data is same data value = match
-//   if ($('.selected').first().data('card-id') == $('.selected').last().data('card-id')) {
-//     alert("Card Match");
-//   } else {
-//     alert("Card not match");
-//   }
-// }
+  let elements = document.getElementsByClassName(".card")
+  let first = elements[0].getElementsByTagName('i')[0]
+  let second = elements[1].getElementsByTagName('i')[0]
+  let matches = first.classList.length === second.classList.length
+  first.classList.forEach(entry => matches = matches && second.classList.contains(entry))
+  console.log(matches)
+  
+  // matches ? disable() : unflip();
+
+}
+
+checkIfMatches()
+
+// https://www.w3schools.com/jsref/met_element_removeeventlistener.asp
+// Remove Event Listener if cards match
+
+function cardsMatch() {
+  firstCard.removeEventListener("click", "flipped");
+  secondCard.removeEventListener("click", "flipped");
+}
+
