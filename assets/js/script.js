@@ -1,40 +1,57 @@
-let array = ["cat1", "cat2", "cat3", "cat4", "cat5", "cat6"];
+$(document).ready(function() {
+  // Array of Cat Cards
+  let Cards = ["cat1", "cat2", "cat3", "cat4", "cat5", "cat6"];
 
-// Randomize array in-place using Durstenfeld shuffle algorithm - see README.md https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array 
-// shuffle the cards
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
+  // Array of Cat Cards, each cat will appear twice
+  let CardArray = [
+      ["cat1", "assets/images/cat1.jpg"],
+      ["cat1", "assets/images/cat1.jpg"],
+      ["cat2", "assets/images/cat2.jpg"],
+      ["cat2", "assets/images/cat2.jpg"],
+      ["cat3", "assets/images/cat3.jpg"],
+      ["cat3", "assets/images/cat3.jpg"],
+      ["cat4", "assets/images/cat4.jpg"],
+      ["cat4", "assets/images/cat4.jpg"],
+      ["cat5", "assets/images/cat5.jpg"],
+      ["cat5", "assets/images/cat5.jpg"],
+      ["cat6", "assets/images/cat6.jpg"],
+      ["cat6", "assets/images/cat6.jpg"]
+  ];
 
-      // Generate random number
-      let j = Math.floor(Math.random() * (i + 1));
+  // Randomize (shuffle) the Cards
+  for (let i = CardArray.length - 1; i > -1; --i) {
 
-      let temp = array[i];
-      array[i] = array[j];
+      // This is the randomise code from the web
+      let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
 
-      array[j] = temp;
-  }
-return array;
-console.log(shuffleArray);
-}
+      // Read the card at the current i position
+      CatNumber = CardArray[i][0];
+      CatPic = CardArray[i][1];
+      // And swap it with the random element.
+      CardArray[i][0] = CardArray[j][0];
+      CardArray[i][1] = CardArray[j][1];
 
-// borrowed from https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick
+      CardArray[j][0] = CatNumber;
+      CardArray[j][1] = CatPic;
 
-// Flip Card
+      // End of the randomise code from the web
 
-for (let firstCard of document.querySelectorAll(".card")) {  
-  firstCard.addEventListener("click", () => {
-      firstCard.classList.toggle("flipped");
-      console.log("flipped");
-    });
-}
+      // Populate the screen grid with the cat picture
+      document.getElementById("CardNum" + i).src = CardArray[i][1];
 
-// for (let secondCard of document.querySelectorAll(".card")) {
-//     secondCard.addEventListener("click", () => {
-//       secondCard.classList.toggle("flipped");
-//       if (firstCard === secondCard) {disable === "click";
-//       } else {firstCard != secondCard.classList.toggle("flipped");
-//       }};
-// }
+      console.log(i + " " + CardArray[i][0]);
+  }});
+
+ // borrowed from https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick
+
+    // Flip Card
+
+    for (let firstCard of document.querySelectorAll(".card")) {
+      firstCard.addEventListener("click", () => {
+          firstCard.classList.toggle("flipped");
+          console.log("flipped");
+      });
+  };
 
 // On click of second card
 // A. Turn Over
@@ -42,57 +59,42 @@ for (let firstCard of document.querySelectorAll(".card")) {
 // C. If same, keep both cards flipped
 // D. If not, flip cards over to back image
 
+// RLM Get all the elements that have the class name"card"
 const secondCard = document.getElementsByClassName("card");
 
-card.addEventListener("onclick", flipCard);
+// RLM Add the addEventListener to each card
+NumOfCards = secondCard.length;
+
+for (i = 0; i < NumOfCards; i++) {
+    secondCard[i].addEventListener("onclick", flipCard);
+}
+
 
 function flipCard() {
     card.classList.toggle("flipCard");
 }
 
-secondCard(flipCard);
+//secondCard(flipCard);
 
 if (secondCard === firstCard) {
     //then stay flipped
 } else {
     //flip both cards back over
-} 
+}
 
 secondCard(stayFlipped);
 
-
-// Need to be able to stop the user from clicking more than 2 cards in each go and click each card
-
-
-
-// https://www.w3schools.com/jsref/met_element_removeeventlistener.asp
-// Remove Event Listener if cards match
-
-function cardsMatch() {
-  firstCard.removeEventListener("click", "flipped");
-  secondCard.removeEventListener("click", "flipped");
-}
 
 //https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 // Upon starting the game, the timer needs to start counting down
 
 var timeleft = 90;
-var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    clearInterval(downloadTimer);
-    document.getElementById("countdown").innerHTML = "Finished";
-  } else {
-    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-  }
-  timeleft -= 1;
+var downloadTimer = setInterval(function() {
+    if (timeleft <= 0) {
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "Finished";
+    } else {
+        document.getElementById("countdown").innerHTML = timeleft + "seconds remaining";
+    }
+    timeleft -= 1;
 }, 1000);
-
-//Upon each click, the moves need to increase
-
-
-
-//once a pair is found, the pairs need to increase
-
-// once all pairs are found need a modal to say pawulations (insert paw)
-
-// if 2 cards are different then flip both cards back over
