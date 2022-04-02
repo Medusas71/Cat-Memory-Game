@@ -19,7 +19,8 @@ let cardArray = [
 // Randomize (shuffle) the Cards
 for (let i = cardArray.length - 1; i > -1; --i) {
 
-    // Generate random number - see Testing.md https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
+    // https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
+    // Generate random number - see Testing.md 
     let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
 
     // Read the card at the current i position
@@ -38,7 +39,8 @@ for (let i = cardArray.length - 1; i > -1; --i) {
     console.log(i + " " + cardArray[i][0]);
 };
 
-// Code from stack overflow - see Testing.md  https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick
+// https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick
+// Code from stack overflow - see Testing.md  
 
 // Flip First Card
 // On click, turn over first card
@@ -117,7 +119,7 @@ function cardFlipped(card) {
         let firstCardId = firstCatCardId.slice();
 
         document.getElementById(firstCardId).addEventListener("click", document.getElementById(firstCardId).fn = function fn() {
-            cardSelected(document.getElementById(firstCardId));
+           cardSelected(document.getElementById(firstCardId));
         }, false);
 
         let secondCardId = secondCatCardId.slice();
@@ -134,5 +136,20 @@ function cardFlipped(card) {
     }
 }
 
-
+//https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+// Upon starting the game, the timer needs to start counting down
+// Function for timer
+function startTimer() {
+    let timeleft = 60;
+    let downloadTimer = setInterval(function() {
+        if (timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "Finished";
+        } else {
+            document.getElementById("countdown").innerHTML = timeleft + " seconds";
+        }
+        timeleft -= 1;
+    }, 1000);
+    let timer = setTimeout(function() { })
+    }
 
