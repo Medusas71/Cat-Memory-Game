@@ -147,7 +147,7 @@ function cardFlipped(card) {
 // Upon starting the game, the timer needs to start counting down
 // Function for timer
 function startTimer() {
-    let timeleft = 5;
+    let timeleft = 60;
     let downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
             clearInterval(downloadTimer);
@@ -171,13 +171,13 @@ function increaseMoves() {
 // Function when timer runs out and game is not finished
 
 function endGame() {
-    const gameOverModal = document.createElement("div")
-    gameOverModal.innerHTML = `
-        <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="gameOverModalLabel" aria-hidden="true">
+    const timeOverModal = document.createElement("div")
+    timeOverModal.innerHTML = `
+        <div class="modal fade" id="timeOverModal" tabindex="-1" role="dialog" aria-labelledby="timeOverModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title text-align" id="gameOverModalLabel">Game Over</h5>
+                  <h5 class="modal-title text-align" id="timeOverModalLabel">Game Over</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -194,8 +194,11 @@ function endGame() {
             </div>
           </div>
         `
-    const mainElement = document.getElementsByTagName('main').item(0);
-    mainElement.appendChild(gameOverModal);
-    const gameOverModalElement = new bootstrap.Modal(document.getElementById('gameOverModal'), {});
-    gameOverModalElement.show();
+    const mainElement = document.getElementsByTagName("main").item(0);
+    mainElement.appendChild(timeOverModal);
+
+    // https://stackoverflow.com/questions/11404711/how-can-i-trigger-a-bootstrap-modal-programmatically
+    
+    const timeOverModalElement = new bootstrap.Modal(document.getElementById("timeOverModal"), {});
+    timeOverModalElement.show();
 }
