@@ -145,15 +145,46 @@ function cardFlipped(card) {
 // Upon starting the game, the timer needs to start counting down
 // Function for timer
 function startTimer() {
-    let timeleft = 60;
+    let timeleft = 5;
     let downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
             clearInterval(downloadTimer);
             document.getElementById("countdown").innerHTML = "Finished";
+            endGame()
         } else {
             document.getElementById("countdown").innerHTML = timeleft + " seconds";
         }
         timeleft -= 1;
     }, 1000);
     let timer = setTimeout(function () {})
+}
+
+function endGame() {
+    const gameOverModal = document.createElement("div")
+    gameOverModal.innerHTML = `
+        <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="gameOverModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-align" id="gameOverModalLabel">Game Over</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <b>Time has run out - sorry you lose!</b>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `
+    const mainElement = document.getElementsByTagName('main').item(0)
+    mainElement.appendChild(gameOverModal)
+    const gameOverModalElement = new bootstrap.Modal(document.getElementById('gameOverModal'), {});
+    gameOverModalElement.show();
 }
