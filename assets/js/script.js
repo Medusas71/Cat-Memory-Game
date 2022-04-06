@@ -70,9 +70,11 @@ let flippedCounter = 0;
 let firstCard, secondCard = null;
 let firstCatCardId, secondCatCardId, catCardId = "";
 let timerStarted = false;
+let moves = 0;
 
 // This is called when a card is flipped
 function cardFlipped(card) {
+    increaseMoves();
     console.log("timerStarted = " + timerStarted);
     // Increase the card flipped counter
     flippedCounter++;
@@ -159,6 +161,15 @@ function startTimer() {
     let timer = setTimeout(function () {})
 }
 
+// Function to increase moves
+
+function increaseMoves() {
+    moves++;
+    document.getElementById("moves").innerHTML = moves;
+}
+
+// Function when timer runs out and game is not finished
+
 function endGame() {
     const gameOverModal = document.createElement("div")
     gameOverModal.innerHTML = `
@@ -183,8 +194,8 @@ function endGame() {
             </div>
           </div>
         `
-    const mainElement = document.getElementsByTagName('main').item(0)
-    mainElement.appendChild(gameOverModal)
+    const mainElement = document.getElementsByTagName('main').item(0);
+    mainElement.appendChild(gameOverModal);
     const gameOverModalElement = new bootstrap.Modal(document.getElementById('gameOverModal'), {});
     gameOverModalElement.show();
 }
