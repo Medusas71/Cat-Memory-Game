@@ -58,7 +58,7 @@ for (let card of document.querySelectorAll(".card")) {
 /* Function that is called when a card is clicked.  
 It flips the card (toggle) and then checks for a match. */
 
-const cardSelected = function(card) {
+const cardSelected = function (card) {
     // Flip the card
     card.classList.toggle("flipped");
     console.log("flipped" + card);
@@ -78,19 +78,17 @@ function cardFlipped(card) {
     flippedCounter++;
 
     // Get the image (cat pic) for the card that was clicked
-    catCardImg = (card.getElementsByClassName("card-front")[0].src).slice();
+    const catCardImg = (card.getElementsByClassName("card-front")[0].src).slice();
 
     // Get the id for the card that has been clicked
     catCardId = (card.getAttribute("id")).slice();
 
     console.log("image = " + catCardImg);
-    console.log("Flipped Counter = " + flippedCounter);
+    console.log("Flipped Counter = " + flippedCounter)
     console.log("id_of_cat_card = " + (card.getAttribute("id")).slice());
-
     if (flippedCounter === 1) {
         // Remember first card by taking a copy of its id
-        firstCatCardId = (card.getAttribute("id")).slice();
-        // Don't allow the first card to be clicked again
+        firstCatCardId = (card.getAttribute("id")).slice(); // Don't allow the first card to be clicked again
         card.removeEventListener("click", card.fn, false);
         // If the timer hasn't started yet, start it
         if (timerStarted === false) {
@@ -99,9 +97,16 @@ function cardFlipped(card) {
         }
     } else if (flippedCounter === 2) {
         secondCatCardId = (card.getAttribute("id")).slice();
+
+        const firstCatCardElement = document.getElementById(firstCatCardId)
+        const firstCatCardFrontElement = firstCatCardElement.getElementsByClassName("card-front")[0]
+        const secondCatCardElement = document.getElementById(secondCatCardId)
+
+        const secondCatCardFrontElement = secondCatCardElement.getElementsByClassName("card-front")[0]
         // Remove the event listener so cards can't be re-clicked
+
         card.removeEventListener('click', card.fn, false);
-        if (document.getElementById(firstCatCardId.slice()).getElementsByClassName("card-front")[0].src === document.getElementById(secondCatCardId.slice()).getElementsByClassName("card-front")[0].src) {
+        if (firstCatCardFrontElement.src === secondCatCardFrontElement.src) {
             console.log("Cards Match!");
             // Reset counter to restart matching
             flippedCounter = 0;
@@ -119,7 +124,7 @@ function cardFlipped(card) {
         let firstCardId = firstCatCardId.slice();
 
         document.getElementById(firstCardId).addEventListener("click", document.getElementById(firstCardId).fn = function fn() {
-           cardSelected(document.getElementById(firstCardId));
+            cardSelected(document.getElementById(firstCardId));
         }, false);
 
         let secondCardId = secondCatCardId.slice();
@@ -141,7 +146,7 @@ function cardFlipped(card) {
 // Function for timer
 function startTimer() {
     let timeleft = 60;
-    let downloadTimer = setInterval(function() {
+    let downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
             clearInterval(downloadTimer);
             document.getElementById("countdown").innerHTML = "Finished";
@@ -150,6 +155,5 @@ function startTimer() {
         }
         timeleft -= 1;
     }, 1000);
-    let timer = setTimeout(function() { })
-    }
-
+    let timer = setTimeout(function () {})
+}
