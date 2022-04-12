@@ -68,3 +68,5 @@ where I used background-color: transparent, to remove the Bootstrap default back
     When hovering over the corner of the Exit and Restart Game buttons, the button would change background colour to black, however the words would not change colour until the cursor is closer to the letters. So there was a moment when the button is all black.
 * **Fix**: The issue was discussed with the channel lead for MS2 project, Scott Boning. Upon advice received I removed the div from above and below the <a> tag and placed the classes from the div in the <a> tag. This gave a smooth transition ensuring that the letters change colour immediately when hovering. The delay had been removed.
 
+**JavaScript**
+The issues that I had with JavaScript was working out how to write the code. I did a lot of googling and found information from W3 Schools and various other places on the web. Please see the Readme.md credits for this information.
