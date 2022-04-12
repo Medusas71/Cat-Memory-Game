@@ -160,10 +160,12 @@ let downloadTimer
 
 function startTimer() {
     let timeleft = 60;
+    const gameOverText = "Game Over"
+    const gameOverMessage = "Time has run out - sorry you lose!"
     downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
             stopTimer()
-            endGame()
+            endGame(gameOverText, gameOverMessage)
         } else {
             document.getElementById("countdown").innerHTML = timeleft + " seconds";
         }
@@ -184,6 +186,9 @@ function increasePairs() {
     document.getElementById("pairs").innerHTML = pairs;
     if (pairs === totalCards / 2) {
         stopTimer()
+        const gameOverHeader = "Pawulations"
+        const gameOverMessage = "You have found all the cards."
+        endGame(gameOverHeader, gameOverMessage)
     }
 }
 
@@ -196,24 +201,29 @@ function increaseMoves() {
 
 // Function when timer runs out and game is not finished
 
-function endGame() {
+function endGame(title, message) {
     const timeOverModal = document.createElement("div")
+    let nextLevelLink = ''
+    if (title === 'Pawulations'){
+        nextLevelLink = '<a class="btn btn-primary" href="level2.html">Next Level</a>'
+    }
     timeOverModal.innerHTML = `
         <div class="modal fade" id="timeOverModal" tabindex="-1" role="dialog" aria-labelledby="timeOverModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title text-align" id="timeOverModalLabel">Game Over</h5>
+                  <h5 class="modal-title text-align" id="timeOverModalLabel">${title}</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                   <p>
-                    <b>Time has run out - sorry you lose!</b>
+                    <b>${message}</b>
                   </p>
                 </div>
                 <div class="modal-footer">
+                  ${nextLevelLink}
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
