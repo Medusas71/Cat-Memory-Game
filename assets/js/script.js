@@ -72,6 +72,9 @@ let firstCatCardId, secondCatCardId, catCardId = "";
 let timerStarted = false;
 let moves = 0;
 
+// Keep track of the pairs found
+let pairs = 0;
+
 // This is called when a card is flipped
 function cardFlipped(card) {
     increaseMoves();
@@ -107,11 +110,14 @@ function cardFlipped(card) {
         const secondCatCardFrontElement = secondCatCardElement.getElementsByClassName("card-front")[0]
         // Remove the event listener so cards can't be re-clicked
 
+        // Looks for a matching card
         card.removeEventListener('click', card.fn, false);
         if (firstCatCardFrontElement.src === secondCatCardFrontElement.src) {
             console.log("Cards Match!");
             // Reset counter to restart matching
             flippedCounter = 0;
+            // Increase pairs
+            increasePairs()
         } else {
             console.log("Cards Don't Match!");
         }
@@ -145,6 +151,7 @@ function cardFlipped(card) {
 
 //https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 // Upon starting the game, the timer needs to start counting down
+// Once all matches are found the time needs to stop counting down
 // Function for timer
 function startTimer() {
     let timeleft = 60;
@@ -159,6 +166,13 @@ function startTimer() {
         timeleft -= 1;
     }, 1000);
     let timer = setTimeout(function () {})
+}
+
+
+// Pairs increase once a pair is found
+function increasePairs() {
+    pairs++;
+    document.getElementById("pairs").innerHTML = pairs;
 }
 
 // Function to increase moves
