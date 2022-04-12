@@ -1,20 +1,52 @@
 // Array of Cat Cards, each cat will appear twice
 
-let cardArray = [
+const gameLevels = {
+    level1: {
+        cardArray: [
 
-    ["cat1", "assets/images/cat1.jpg"],
-    ["cat1", "assets/images/cat1.jpg"],
-    ["cat2", "assets/images/cat2.jpg"],
-    ["cat2", "assets/images/cat2.jpg"],
-    ["cat3", "assets/images/cat3.jpg"],
-    ["cat3", "assets/images/cat3.jpg"],
-    ["cat4", "assets/images/cat4.jpg"],
-    ["cat4", "assets/images/cat4.jpg"],
-    ["cat5", "assets/images/cat5.jpg"],
-    ["cat5", "assets/images/cat5.jpg"],
-    ["cat6", "assets/images/cat6.jpg"],
-    ["cat6", "assets/images/cat6.jpg"]
-];
+            ["cat1", "assets/images/cat1.jpg"],
+            ["cat1", "assets/images/cat1.jpg"],
+            ["cat2", "assets/images/cat2.jpg"],
+            ["cat2", "assets/images/cat2.jpg"],
+            ["cat3", "assets/images/cat3.jpg"],
+            ["cat3", "assets/images/cat3.jpg"],
+            ["cat4", "assets/images/cat4.jpg"],
+            ["cat4", "assets/images/cat4.jpg"],
+            ["cat5", "assets/images/cat5.jpg"],
+            ["cat5", "assets/images/cat5.jpg"],
+            ["cat6", "assets/images/cat6.jpg"],
+            ["cat6", "assets/images/cat6.jpg"]
+        ],
+        timer:60,
+        winningTitle:"Pawulations"
+    },
+    level2: {
+        cardArray: [
+            ["cat1", "assets/images/cat1.jpg"],
+            ["cat1", "assets/images/cat1.jpg"],
+            ["cat2", "assets/images/cat2.jpg"],
+            ["cat2", "assets/images/cat2.jpg"],
+            ["cat3", "assets/images/cat3.jpg"],
+            ["cat3", "assets/images/cat3.jpg"],
+            ["cat4", "assets/images/cat4.jpg"],
+            ["cat4", "assets/images/cat4.jpg"],
+            ["cat5", "assets/images/cat5.jpg"],
+            ["cat5", "assets/images/cat5.jpg"],
+            ["cat6", "assets/images/cat6.jpg"],
+            ["cat6", "assets/images/cat6.jpg"],
+            ["cat7", "assets/images/cat7.jpg"],
+            ["cat7", "assets/images/cat7.jpg"],
+            ["cat8", "assets/images/cat8.jpg"],
+            ["cat8", "assets/images/cat8.jpg"],
+        ],
+        timer:90,
+        winningTitle:"Pawsome Work"
+    }
+}
+
+console.log(document.querySelector("main"));
+const currentLevel = document.querySelector("main").id
+const {cardArray, timer, winningTitle} = gameLevels[currentLevel]
 
 const totalCards = cardArray.length
 
@@ -159,7 +191,7 @@ function cardFlipped(card) {
 let downloadTimer
 
 function startTimer() {
-    let timeleft = 60;
+    let timeleft = timer;
     const gameOverText = "Game Over"
     const gameOverMessage = "Time has run out - sorry you lose!"
     downloadTimer = setInterval(function () {
@@ -171,7 +203,7 @@ function startTimer() {
         }
         timeleft -= 1;
     }, 1000);
-    let timer = setTimeout(function () {})
+    // let timer = setTimeout(function () {})
 }
 
 // Function to stop timer
@@ -186,7 +218,7 @@ function increasePairs() {
     document.getElementById("pairs").innerHTML = pairs;
     if (pairs === totalCards / 2) {
         stopTimer()
-        const gameOverHeader = "Pawulations"
+        const gameOverHeader = winningTitle
         const gameOverMessage = "You have found all the cards."
         endGame(gameOverHeader, gameOverMessage)
     }
