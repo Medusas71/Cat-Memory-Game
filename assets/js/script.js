@@ -16,6 +16,9 @@ let cardArray = [
     ["cat6", "assets/images/cat6.jpg"]
 ];
 
+const totalCards = cardArray.length
+
+
 // Randomize (shuffle) the Cards
 for (let i = cardArray.length - 1; i > -1; --i) {
 
@@ -153,12 +156,13 @@ function cardFlipped(card) {
 // Upon starting the game, the timer needs to start counting down
 // Once all matches are found the time needs to stop counting down
 // Function for timer
+let downloadTimer
+
 function startTimer() {
     let timeleft = 60;
-    let downloadTimer = setInterval(function () {
+    downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
-            clearInterval(downloadTimer);
-            document.getElementById("countdown").innerHTML = "Finished";
+            stopTimer()
             endGame()
         } else {
             document.getElementById("countdown").innerHTML = timeleft + " seconds";
@@ -168,11 +172,19 @@ function startTimer() {
     let timer = setTimeout(function () {})
 }
 
+// Function to stop timer
+function stopTimer() {
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Finished";
+}
 
 // Pairs increase once a pair is found
 function increasePairs() {
     pairs++;
     document.getElementById("pairs").innerHTML = pairs;
+    if (pairs === totalCards / 2) {
+        stopTimer()
+    }
 }
 
 // Function to increase moves
@@ -212,7 +224,7 @@ function endGame() {
     mainElement.appendChild(timeOverModal);
 
     // https://stackoverflow.com/questions/11404711/how-can-i-trigger-a-bootstrap-modal-programmatically
-    
+
     const timeOverModalElement = new bootstrap.Modal(document.getElementById("timeOverModal"), {});
     timeOverModalElement.show();
 }
