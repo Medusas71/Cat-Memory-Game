@@ -1,5 +1,5 @@
 // Array of Cat Cards, each cat will appear twice
-
+// Object destructuring - sourced from the web - see Readme.md credits
 const gameLevels = {
     level1: {
         cardArray: [
@@ -17,8 +17,8 @@ const gameLevels = {
             ["cat6", "assets/images/cat6.jpg"],
             ["cat6", "assets/images/cat6.jpg"]
         ],
-        timer:60,
-        winningTitle:"Pawulations"
+        timer: 60,
+        winningTitle: "Pawulations"
     },
     level2: {
         cardArray: [
@@ -37,25 +37,25 @@ const gameLevels = {
             ["cat7", "assets/images/cat7.jpg"],
             ["cat7", "assets/images/cat7.jpg"],
             ["cat8", "assets/images/cat8.jpg"],
-            ["cat8", "assets/images/cat8.jpg"],
+            ["cat8", "assets/images/cat8.jpg"]
         ],
-        timer:90,
-        winningTitle:"Pawsome Work"
+        timer: 90,
+        winningTitle: "Pawsome Work"
     }
-}
+};
 
-console.log(document.querySelector("main"));
-const currentLevel = document.querySelector("main").id
-const {cardArray, timer, winningTitle} = gameLevels[currentLevel]
+const currentLevel = document.querySelector("main").id;
+const {
+    cardArray,
+    timer,
+    winningTitle
+} = gameLevels[currentLevel];
+const totalCards = cardArray.length;
 
-const totalCards = cardArray.length
-
-
-// Randomize (shuffle) the Cards
+// Randomize (shuffle) the Cards - sourced from the web - see Readme.md credits
 for (let i = cardArray.length - 1; i > -1; --i) {
 
-    // https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
-    // Generate random number - see Testing.md 
+    // Generate random number
     let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
 
     // Read the card at the current i position
@@ -72,33 +72,30 @@ for (let i = cardArray.length - 1; i > -1; --i) {
     // Populate the screen grid with the cat picture
     document.getElementById("cardNum" + i).src = cardArray[i][1];
     console.log(i + " " + cardArray[i][0]);
-};
-
-// https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick
-// Code from stack overflow - see Testing.md  
+}
 
 // Flip First Card
 // On click, turn over first card
 // Replace picture of back of card to the front
 // Add an Event Listener
+// Create multiple flip cards that flip with click - Sourced from the web - see Readme.md credits
 
 for (let card of document.querySelectorAll(".card")) {
     // Add event listener to each card
     card.addEventListener("click", card.fn = function fn() {
-        /* Function to call when a card is clicked on. */
+        // Function to call when a card is clicked.
         cardSelected(card);
     }, false);
-};
+}
 
-/* Function that is called when a card is clicked.  
-It flips the card (toggle) and then checks for a match. */
-
+// Function that is called when a card is clicked.
+// It flips the card (toggle) and then checks for a match.
 const cardSelected = function (card) {
     // Flip the card
     card.classList.toggle("flipped");
     console.log("flipped" + card);
     cardFlipped(card);
-}
+};
 
 // Keep track of the number of cards flipped
 let flippedCounter = 0;
@@ -124,7 +121,7 @@ function cardFlipped(card) {
     catCardId = (card.getAttribute("id")).slice();
 
     console.log("image = " + catCardImg);
-    console.log("Flipped Counter = " + flippedCounter)
+    console.log("Flipped Counter = " + flippedCounter);
     console.log("id_of_cat_card = " + (card.getAttribute("id")).slice());
     if (flippedCounter === 1) {
         // Remember first card by taking a copy of its id
@@ -138,21 +135,21 @@ function cardFlipped(card) {
     } else if (flippedCounter === 2) {
         secondCatCardId = (card.getAttribute("id")).slice();
 
-        const firstCatCardElement = document.getElementById(firstCatCardId)
-        const firstCatCardFrontElement = firstCatCardElement.getElementsByClassName("card-front")[0]
-        const secondCatCardElement = document.getElementById(secondCatCardId)
+        const firstCatCardElement = document.getElementById(firstCatCardId);
+        const firstCatCardFrontElement = firstCatCardElement.getElementsByClassName("card-front")[0];
+        const secondCatCardElement = document.getElementById(secondCatCardId);
 
-        const secondCatCardFrontElement = secondCatCardElement.getElementsByClassName("card-front")[0]
+        const secondCatCardFrontElement = secondCatCardElement.getElementsByClassName("card-front")[0];
         // Remove the event listener so cards can't be re-clicked
 
         // Looks for a matching card
-        card.removeEventListener('click', card.fn, false);
+        card.removeEventListener("click", card.fn, false);
         if (firstCatCardFrontElement.src === secondCatCardFrontElement.src) {
             console.log("Cards Match!");
             // Reset counter to restart matching
             flippedCounter = 0;
             // Increase pairs
-            increasePairs()
+            increasePairs();
         } else {
             console.log("Cards Don't Match!");
         }
@@ -179,65 +176,61 @@ function cardFlipped(card) {
         firstCatCardId = card.getAttribute("id");
         flippedCounter = 1;
 
-        // Don't allow the card to be clicked on again
+        // Don't allow the card to be clicked again
         card.removeEventListener("click", document.getElementById(secondCatCardId.fn, false));
     }
 }
 
-//https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
 // Upon starting the game, the timer needs to start counting down
-// Once all matches are found the time needs to stop counting down
-// Function for timer
-let downloadTimer
+// Function for timer - Sourced from the web - see Readme.md credits
+let downloadTimer;
 
 function startTimer() {
     let timeleft = timer;
-    const gameOverText = "Game Over"
-    const gameOverMessage = "Time has run out - sorry you lose!"
+    const gameOverText = "Game Over";
+    const gameOverMessage = "Time has run out - sorry you lose!";
     downloadTimer = setInterval(function () {
         if (timeleft <= 0) {
-            stopTimer()
-            endGame(gameOverText, gameOverMessage)
+            stopTimer();
+            endGame(gameOverText, gameOverMessage);
         } else {
             document.getElementById("countdown").innerHTML = timeleft + " seconds";
         }
         timeleft -= 1;
     }, 1000);
-    // let timer = setTimeout(function () {})
 }
 
+// Once all matches are found the timer needs to stop counting down
 // Function to stop timer
 function stopTimer() {
     clearInterval(downloadTimer);
     document.getElementById("countdown").innerHTML = "Finished";
 }
 
-// Pairs increase once a pair is found
+// Function to increase pairs once a pair is found
 function increasePairs() {
     pairs++;
     document.getElementById("pairs").innerHTML = pairs;
     if (pairs === totalCards / 2) {
-        stopTimer()
-        const gameOverHeader = winningTitle
-        const gameOverMessage = "You have found all the cards."
-        endGame(gameOverHeader, gameOverMessage)
+        stopTimer();
+        const gameOverHeader = winningTitle;
+        const gameOverMessage = "You have found all the cards.";
+        endGame(gameOverHeader, gameOverMessage);
     }
 }
 
 // Function to increase moves
-
 function increaseMoves() {
     moves++;
     document.getElementById("moves").innerHTML = moves;
 }
 
-// Function when timer runs out and game is not finished
-
+// Function for End Game
 function endGame(title, message) {
-    const timeOverModal = document.createElement("div")
-    let nextLevelLink = ''
-    if (title === 'Pawulations'){
-        nextLevelLink = '<a class="btn btn-primary" href="level2.html">Next Level</a>'
+    const timeOverModal = document.createElement("div");
+    let nextLevelLink = "";
+    if (title === "Pawulations") {
+        nextLevelLink = '<a class="btn btn-primary" href="level2.html">Next Level</a>';
     }
     timeOverModal.innerHTML = `
         <div class="modal fade" id="timeOverModal" tabindex="-1" role="dialog" aria-labelledby="timeOverModalLabel" aria-hidden="true">
@@ -261,12 +254,11 @@ function endGame(title, message) {
               </div>
             </div>
           </div>
-        `
+        `;
     const mainElement = document.getElementsByTagName("main").item(0);
     mainElement.appendChild(timeOverModal);
 
-    // https://stackoverflow.com/questions/11404711/how-can-i-trigger-a-bootstrap-modal-programmatically
-
+    // Launch the modal programmatically - Sourced from the web - see Readme.md credits
     const timeOverModalElement = new bootstrap.Modal(document.getElementById("timeOverModal"), {});
     timeOverModalElement.show();
 }
