@@ -214,7 +214,7 @@ function increasePairs() {
     if (pairs === totalCards / 2) {
         stopTimer();
         const gameOverHeader = winningTitle;
-        const gameOverMessage = "You have found all the cards.";
+        const gameOverMessage = "You have found all the cards &#128570;";
         endGame(gameOverHeader, gameOverMessage);
     }
 }
@@ -230,14 +230,14 @@ function endGame(title, message) {
     const timeOverModal = document.createElement("div");
     let nextLevelLink = "";
     if (title === "Pawulations") {
-        nextLevelLink = '<a class="btn btn-primary" href="level2.html">Next Level</a>';
+        nextLevelLink = '<a class="button" href="level2.html">Next Level</a>';
     }
     timeOverModal.innerHTML = `
         <div class="modal fade" id="timeOverModal" tabindex="-1" role="dialog" aria-labelledby="timeOverModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
+              <div class="modal-content modal-color modal-border">
                 <div class="modal-header">
-                  <h5 class="modal-title text-align" id="timeOverModalLabel">${title}</h5>
+                  <h5 class="modal-title text-align" id="timeOverModalLabel">${title} &#128062;</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -249,7 +249,7 @@ function endGame(title, message) {
                 </div>
                 <div class="modal-footer">
                   ${nextLevelLink}
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a class="button" href="index.html">Close</a>
                 </div>
               </div>
             </div>
