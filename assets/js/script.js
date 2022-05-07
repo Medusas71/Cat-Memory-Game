@@ -262,3 +262,11 @@ function endGame(title, message) {
     const timeOverModalElement = new bootstrap.Modal(document.getElementById("timeOverModal"), {});
     timeOverModalElement.show();
 }
+
+   let restartButton = document.getElementById("restart");
+
+    restartButton.addEventListener("click", restartGame);
+    
+    function restartGame() {
+        window.location.reload();
+    }
