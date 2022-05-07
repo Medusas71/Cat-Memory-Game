@@ -26,18 +26,25 @@ header {
 
 h1 {
     color: #000;
-    font-size: 50px;
+    font-size: 30px;
     font-family: "Flavors", sans-serif;
 }
 
 h2 {
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Flavors", sans-serif;
 }
 
+h3 {
+    color: #E0E1E4;
+    font-size: 10px;
+    font-family: "Fresca", sans-serif;
+    letter-spacing: 1px;
+}
+
 .container-fluid {
-    width: 80%;
+    width: 70%;
 }
 
 /*----------------------------------------------------Game Statistics*/
@@ -55,10 +62,8 @@ h2 {
     position: relative;
     width: 3em;
     height: 3em;
-    background-color: transparent;
-    /*---credits to stack overflow - see bugs/fixes in testing.md*/
-    border: none;
-    /*---remove automatic border set by Bootstrap*/
+    background-color: transparent; /*---credits to stack overflow - see bugs/fixes in testing.md*/    
+    border: none; /*---remove automatic border set by Bootstrap*/    
     border-radius: 10%;
     cursor: pointer;
     transition: all 0.8s ease;
@@ -101,16 +106,30 @@ h2 {
 /*----------------------------------------------------Button*/
 
 .button {
-    border: 3px solid #000;
+    border: 2px solid #000;
     color: #E0E1E4;
-    font-size: 15px;
+    font-size: 10px;
     font-family: "Fresca", sans-serif;
     letter-spacing: 1px;
-    padding: 2px;
+    padding: 5px;
     cursor: pointer;
     border-radius: 5%;
     display: inline-block;
 }
+
+.exit-button {
+    position: relative;
+    right: 10px;
+}
+
+.restart-button {
+    position: relative;
+    left: 40px;
+}
+
+/* .align-right {
+    margin-right: 20px;
+} */
 
 /*----------------------------------------------------Hover*/
 
@@ -133,20 +152,20 @@ a:hover {
 
 .index-box {
     margin-top: 50px;
-    min-height: 300px;
-    max-width: 500px;
+    min-height: 250px;
+    max-width: 250px;
     background-color: #08b5c2;
     border-radius: 25%;
 }
 
 .heading {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .play,
 .instructions {
     color: #000;
-    font-size: 40px;
+    font-size: 25px;
     font-family: "Fresca", sans-serif;
 }
 
@@ -163,14 +182,14 @@ a:hover {
 .modal-title {
     color: #000;
     font-family: "Flavors", sans-serif;
-    font-size: 40px;
+    font-size: 25px;
     width: 90%;
 }
 
 .modal-body {
     color: #000;
     font-family: "Fresca", sans-serif;
-    font-size: 20px;
+    font-size: 13px;
 }
 
 /*----------------------------------------------------Footer*/
