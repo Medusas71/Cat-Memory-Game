@@ -194,7 +194,7 @@ function startTimer() {
             stopTimer();
             endGame(gameOverText, gameOverMessage);
         } else {
-            document.getElementById("countdown").innerHTML = timeleft + " seconds";
+            document.getElementById("countdown").innerHTML = timeleft + " sec";
         }
         timeleft -= 1;
     }, 1000);
