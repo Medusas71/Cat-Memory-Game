@@ -73,6 +73,12 @@ h3 {
 /* copied from https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick */
 /* Use CSS classes to toggle */
 
+.flip-card {
+    /*....received assistance from Tutor Support with Flex*/
+    display: flex;
+    justify-content: space-around;
+}
+
 .card .card-front {
     transform: rotateY(180deg);
 }
@@ -104,6 +110,12 @@ h3 {
 }
 
 /*----------------------------------------------------Button*/
+
+.flex-row {
+    /*....received assistance from Tutor Support with Flex*/
+    display: flex;
+    justify-content: space-around;
+}
 
 .button {
     border: 2px solid #000;
@@ -227,6 +239,10 @@ footer {
         width: 5em;
         height: 5em;
     }
+
+    .restart-button {
+        float:right;
+    }
 }
 
 /*-------------------------medium devices (tablets, 768px and up)---*/
@@ -235,6 +251,12 @@ footer {
 
     .container-fluid {
         width: 70%;
+    }
+
+    .restart-button {
+        position: relative;
+        right: 35px;
+        /* float: right; */
     }
 }
 
@@ -266,6 +288,12 @@ footer {
         width: 7em;
         height: 7em;
     }
+
+    .restart-button {
+        position: relative;
+        right: 50px;
+        /* float: right; */
+    }
 }
 
 /*-------------------------extra extra large devices (extra large desktops, 1920px and up)---*/
@@ -291,4 +319,13 @@ footer {
         width: 10em;
         height: 10em;
     }
+
+    .restart-button {
+        position: relative;
+        right: 60px;
+        /* float: right; */
+    }
 }
+
+
+
