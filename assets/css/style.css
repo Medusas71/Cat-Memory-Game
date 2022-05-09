@@ -124,6 +124,7 @@ h3 {
     font-family: "Fresca", sans-serif;
     letter-spacing: 1px;
     padding: 5px;
+    margin-top: 10px;
     cursor: pointer;
     border-radius: 5%;
     display: inline-block;
@@ -133,15 +134,6 @@ h3 {
     position: relative;
     right: 10px;
 }
-
-.restart-button {
-    position: relative;
-    left: 40px;
-}
-
-/* .align-right {
-    margin-right: 20px;
-} */
 
 /*----------------------------------------------------Hover*/
 
@@ -240,8 +232,8 @@ footer {
         height: 5em;
     }
 
-    .restart-button {
-        float:right;
+    .button {
+        font-size: 15px;
     }
 }
 
@@ -253,10 +245,8 @@ footer {
         width: 70%;
     }
 
-    .restart-button {
-        position: relative;
-        right: 35px;
-        /* float: right; */
+    .button {
+        font-size: 20px;
     }
 }
 
@@ -288,12 +278,6 @@ footer {
         width: 7em;
         height: 7em;
     }
-
-    .restart-button {
-        position: relative;
-        right: 50px;
-        /* float: right; */
-    }
 }
 
 /*-------------------------extra extra large devices (extra large desktops, 1920px and up)---*/
@@ -320,10 +304,8 @@ footer {
         height: 10em;
     }
 
-    .restart-button {
-        position: relative;
-        right: 60px;
-        /* float: right; */
+    .button {
+        font-size: 35px;
     }
 }
 
