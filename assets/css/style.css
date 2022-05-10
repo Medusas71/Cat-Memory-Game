@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Flavors&family=Fresca&display=swap');
 
 /*----------------------------------------------------Global Settings */
@@ -11,8 +18,13 @@ body {
     /* added min-height, display and flex direction to assist with the footer - see bugs/fixes in TESTING.md */
     background-color: #660099;
     min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .text-align {
@@ -66,33 +78,42 @@ h3 {
     border: none; /* remove automatic border set by Bootstrap */    
     border-radius: 10%;
     cursor: pointer;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
     transition: all 0.8s ease;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
-/* credits to stack overflow - see bugs/fixes in testing.md */
-/* Use CSS classes to toggle */
-
 .flip-card {
+    /* credits to stack overflow - see bugs/fixes in testing.md */
+    /* Use CSS classes to toggle */
     /* received assistance from Tutor Support with Flex - see bugs/fixes in testing.md */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .card .card-front {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .card .card-back {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
 }
 
 .card.flipped .card-front {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
 }
 
 .card.flipped .card-back {
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
 }
 
 .card-back,
@@ -102,19 +123,24 @@ h3 {
     position: absolute;
     border: 3px solid #000;
     border-radius: 10%;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .card-front {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 /*----------------------------------------------------Button */
 
 .flex-row {
     /* received assistance from Tutor Support with Flex - see bugs/fixes in TESTING.md */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .button {
@@ -330,3 +356,4 @@ footer {
         height: 10em;
     }
 }
+
