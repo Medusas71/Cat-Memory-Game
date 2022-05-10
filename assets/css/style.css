@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Flavors&family=Fresca&display=swap');
 
-/*----------------------------------------------------Global Settings*/
+/*----------------------------------------------------Global Settings */
 
 html {
-    /*-- added height to html to assist with the footer - see bugs/fixes in TESTING.md*/
+    /* added height to html to assist with the footer - see bugs/fixes in TESTING.md */
     height: 100%;
 }
 
 body {
-    /* added min-height, display and flex direction to assist with the footer - see bugs/fixes in TESTING.md*/
+    /* added min-height, display and flex direction to assist with the footer - see bugs/fixes in TESTING.md */
     background-color: #660099;
     min-height: 100%;
     display: flex;
@@ -16,7 +16,7 @@ body {
 }
 
 .text-align {
-    /*........used text-align as a global setting as mentioned in David Bowers webinar*/
+    /* used text-align as a global setting as mentioned in David Bowers webinar */
     text-align: center;
 }
 
@@ -47,7 +47,7 @@ h3 {
     width: 70%;
 }
 
-/*----------------------------------------------------Game Statistics*/
+/*----------------------------------------------------Game Statistics */
 
 .game-stats {
     color: #E0E1E4;
@@ -62,19 +62,19 @@ h3 {
     position: relative;
     width: 3em;
     height: 3em;
-    background-color: transparent; /*---credits to stack overflow - see bugs/fixes in testing.md*/    
-    border: none; /*---remove automatic border set by Bootstrap*/    
+    background-color: transparent; /* credits to stack overflow - see bugs/fixes in testing.md */    
+    border: none; /* remove automatic border set by Bootstrap */    
     border-radius: 10%;
     cursor: pointer;
     transition: all 0.8s ease;
     transform-style: preserve-3d;
 }
 
-/* copied from https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick */
+/* credits to stack overflow - see bugs/fixes in testing.md */
 /* Use CSS classes to toggle */
 
 .flip-card {
-    /*....received assistance from Tutor Support with Flex*/
+    /* received assistance from Tutor Support with Flex - see bugs/fixes in testing.md */
     display: flex;
     justify-content: space-around;
 }
@@ -109,10 +109,10 @@ h3 {
     transform: rotateY(180deg);
 }
 
-/*----------------------------------------------------Button*/
+/*----------------------------------------------------Button */
 
 .flex-row {
-    /*....received assistance from Tutor Support with Flex*/
+    /* received assistance from Tutor Support with Flex - see bugs/fixes in TESTING.md */
     display: flex;
     justify-content: space-around;
 }
@@ -135,7 +135,7 @@ h3 {
     right: 10px;
 }
 
-/*----------------------------------------------------Hover*/
+/*----------------------------------------------------Hover */
 
 a:hover {
     color: #E0E1E4;
@@ -147,10 +147,10 @@ a:hover {
     background-color: #000;
 }
 
-/*----------------------------------------------------index.html*/
+/*----------------------------------------------------index.html */
 
 .cat-bg {
-    /*.......Image sourced from pngset and modified for use*/
+    /* Image sourced from pngset and modified for use */
     background-image: url("../images/cat-background.jpg");
 }
 
@@ -173,7 +173,7 @@ a:hover {
     font-family: "Fresca", sans-serif;
 }
 
-/*----------------------------------------------------Modal - courtesy of Bootstrap*/
+/*----------------------------------------------------Modal - courtesy of Bootstrap */
 
 .modal-color {
     background-color: #08b5c2;
@@ -196,10 +196,10 @@ a:hover {
     font-size: 13px;
 }
 
-/*----------------------------------------------------Footer*/
+/*----------------------------------------------------Footer */
 
 footer {
-    /*-- added margin-top to assist with the footer - see bugs/fixes in TESTING.md*/
+    /* added margin-top to assist with the footer - see bugs/fixes in TESTING.md */
     margin-top: auto;
 }
 
@@ -214,6 +214,8 @@ footer {
     width: 100%;
 }
 
+/*----------------------------------------------------media queries */
+
 /*-------------------------small devices (landscape phones, 576px and up)---*/
 
 @media screen and (min-width: 576px) {
@@ -224,7 +226,6 @@ footer {
 
     .game-stats {
         font-size: 30px;
-        /*-----required to see the wording on larger screens*/
     }
 
     .card {
@@ -273,6 +274,7 @@ footer {
 }
 
 /*-------------------------large devices (desktops, 992px and up)---*/
+
 @media screen and (min-width: 992px) {
 
     .container-fluid {
@@ -290,6 +292,7 @@ footer {
 }
 
 /*-------------------------extra large devices (large desktops, 1200px and up)---*/
+
 @media screen and (min-width: 1200px) {
 
     .container-fluid {
@@ -303,6 +306,7 @@ footer {
 }
 
 /*-------------------------extra extra large devices (extra large desktops, 1920px and up)---*/
+
 @media screen and (min-width: 1920px) {
 
     .container-fluid {
@@ -325,11 +329,4 @@ footer {
         width: 10em;
         height: 10em;
     }
-
-    .button {
-        font-size: 35px;
-    }
 }
-
-
-
