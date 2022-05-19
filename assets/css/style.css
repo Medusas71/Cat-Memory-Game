@@ -274,7 +274,7 @@ footer {
 
     .index-box {
         min-height: 300px;
-        max-width: 500px;
+        max-width: 300px;
     }
 
     h1 {
@@ -325,6 +325,12 @@ footer {
         width: 60%;
     }
 
+    .index-box {
+        min-height: 300px;
+        max-width: 400px;
+    }
+
+
     .card {
         width: 7em;
         height: 7em;
@@ -337,6 +343,11 @@ footer {
 
     .container-fluid {
         width: 50%;
+    }
+
+    .index-box {
+        min-height: 300px;
+        max-width: 500px;
     }
 
     h1 {
