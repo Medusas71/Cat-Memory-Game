@@ -39,10 +39,10 @@ Part of the course I am required to complete 4 milestone projects.
 This memory game is my second milestone project which is part of the 
 Interactive Frontend Development Module.
 
-The cat memory game has been created for people of all ages that love cats and 
+The cat memory game has been created for people of all ages that love cats &#128570; and 
 would like to test their memory.
 The purpose of this website is to improve brain functionality such as focus, 
-concentration and attention and to also have fun.
+concentration and attention and to also have fun. &#128062;
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -54,21 +54,18 @@ concentration and attention and to also have fun.
 
 Players Goals
 
-* As a player, I would like to improve my concentration skills
-* As a player, I would like to improve my focus skills
-* As a player, I would like to improve my attention to detail
-* As a player, I would like to have clear instructions on how to play the game
-* As a player, I would like to be able to increase the level of difficulty to improve
-brain functionality
-* As a player, I would like to exit the game at any time
-* As a player, I would like to be able to replay the level that I am on after
-completing that level
-* As a player, when replaying the level, I would like all the cards to be shuffled
-* As a player, I would like to click a card and the card flips and displays a cat picture
-* As a player, I would like the cards that I matched to stay flipped so I know
-exactly how many cards are left to play
-* As a player, I would like to be able to click the cards as many times as required
-until the matching pair displays
+* As a player, I would like to:
+  * improve my concentration skills
+  * improve my focus skills
+  * improve my attention to detail
+  * have clear instructions on how to play the game
+  * be able to increase the level of difficulty to improve brain functionality
+  * exit the game at any time
+  * be able to restart the level 
+  * click a card, the card flips and displays a cat picture
+  * have the cards that matched, stay flipped so I know exactly how many cards are left to play
+  * be able to click the cards as many times as required until the matching pair displays
+  * have fun
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -87,18 +84,18 @@ I have decided to use cats as images as they are one of my favourite animals.
 
 The features of this project will include:
 
-* The ability to find two matching cat images
-* The ability to improve concentration skills
-* The ability to improve focus skills
-* The ability to improve attention to detail
-* The ability to read clear instructions on how to play the game
-* The ability to increase the level of difficulty to improve brain functionality
-* The ability to exit the game at any time
-* The ability to replay the level that I just played
-* The ability for all the cards to be shuffled when replaying the same level
-* The ability to see a cat when flipping a card
-* The ability to keep the matching cards flipped
-* The ability to click a particular card again if the cards do not match
+* The ability to:
+  * find two matching cat images
+  * improve concentration skills
+  * improve focus skills
+  * improve attention to detail
+  * read clear instructions on how to play the game
+  * increase the level of difficulty to improve brain functionality
+  * exit the game at any time
+  * be able to restart the level
+  * see a cat image when flipping a card
+  * keep the matching cards flipped
+  * click a particular card again if the cards do not match
 
 <a id="structure"></a>
 ### 3. Structure
@@ -111,32 +108,30 @@ an "Instruction" button.
 closed by clicking the "x" button.
   * The "Play" button takes the user to Level 1 of the game.
 * The 2nd page is the Level 1 game which consists of 12 cards, an "Exit" button
-and a "Restart Game" button.
+and a "Restart" button.
   * The user can either start playing the game by clicking a card; or
   * The user can click the "Exit" button and is taken to the Home Page; or
-  * The user can click the "Restart Game" button where the cards will be shuffled and 
+  * The user can click the "Restart" button where the cards will be shuffled and 
 the user can start the game again.
-* On completion of Level 1 a "Congratulations" displays and 3 buttons which consist
-of "Play Level 2", "Replay Level 1" and "Exit to Main Menu".
-  * If "Play Level 2" is clicked the user is taken to the 2nd level which is the 3rd 
+* On completion of Level 1 a "Congratulations" modal displays and two buttons which consist
+of "Next Level" and "Close".
+  * If "Next Level" is clicked the user is taken to the 2nd level which is the 3rd 
   page of the website.
-  * If "Replay Level 1" is clicked, the cards are shuffled and the user is able to replay
-  Level 1.
-  * If "Exit to Main Menu" is clicked, the user is taken back to the main menu. 
+  * If "Close" is clicked, the user is taken back to the main menu. 
 * The 3rd page is the Level 2 game which consists of 16 cards, an "Exit" button and a 
-"Restart Game" button. The user can do the exact same functions as on the Level 1 game.
-* On completion of Level 2, a "Congratulations" displays and 3 buttons which consist of 
-"Replay Level 2", "Go back to Level 1" and "Exit to Main Menu".
-  * If "Replay Level 2" is clicked, the cards are shuffled and the user is able to replay
-  Level 2.
-  * If "Go back to Level 1" is clicked, the user is taken back to Level 1 where 12 cards display.
-  * If "Exit to Main Menu" is clicked, the user is taken back to the main menu.
+"Restart" button. 
+  * The user can do the exact same functions as on the Level 1 game.
+* On completion of Level 2, a "Congratulations" modal displays with one "Close" button 
+where the user is taken back to the main menu.
 
 
 <a id="skeleton"></a>
 ### 4. Skeleton
 
-The wireframes have been created using Balsamiq and were created for Desktop, Tablet and Phone.
+The wireframes have been created using [Balsamiq](https://balsamiq.com/) and were created for Desktop, Tablet and Phone.
+
+These wireframes initially included the ability to replay a level on completion. This has now been removed from the Scope
+and User Stories and placed as an additional feature but has not been removed from the wireframes.
 
 Here are the [wireframes](./documents/cat-memory-game.pdf):
 
@@ -144,16 +139,17 @@ Here are the [wireframes](./documents/cat-memory-game.pdf):
 * [Instructions Wireframe](./readme-images/wireframes/instructions.png)
 * [Level 1 - 12 Cards Wireframe](./readme-images/wireframes/level1-12-cards.png)
 * [1st Level Complete Wireframe](./readme-images/wireframes/1st-level-complete.png)
-* [Level 2 - 16 Cards Wireframe](.readme-images/wireframes/level2-16-cards.png)
-* [2nd Level Complete Wireframe](.readme-images/wireframes/2nd-level-complete.png)
+* [Level 2 - 16 Cards Wireframe](./readme-images/wireframes/level2-16-cards.png)
+* [2nd Level Complete Wireframe](./readme-images/wireframes/2nd-level-complete.png)
 
 <a id="surface"></a>
 ### 5. Surface 
 
 Colour scheme
 
-* I made the background colour of the pages purple #660099 for two reasons. 1. Purple is a royal colour 
-and cats think they are royalty. 2. My favourite colour is purple.
+* I made the background colour of the pages purple #660099 for two reasons. 
+  1. Purple is a royal colour and cats think they are royalty. 
+  2. My favourite colour is purple.
 * I then wanted a blue/green colour to compliment the purple. I selected a Maximum Blue Green #08B5C2.
 * I kept the text colour generic and used Black #000 in some parts and a Gainsboro colour #E0E1E4 for some of the other 
 text, such as copyright information in the footer, the numbers on level 1 and level 2 and the exit and restart game buttons. 
@@ -194,6 +190,9 @@ was modified for use.
 
 <a id="future-features"></a>
 **Future Features to implement**
+
+* As a player, I would like to be able to replay the level that I am on after
+completing that level
 
 [Back to Table of Contents](#table-of-contents)
 
