@@ -74,16 +74,11 @@ for (let i = cardArray.length - 1; i > -1; --i) {
     console.log(i + " " + cardArray[i][0]);
 }
 
-// Flip First Card
-// On click, turn over first card
-// Replace picture of back of card to the front
-// Add an Event Listener
 // Create multiple flip cards that flip with click - Sourced from the web - see Readme.md credits
-
 for (let card of document.querySelectorAll(".card")) {
     // Add event listener to each card
     card.addEventListener("click", card.fn = function fn() {
-        // Function to call when a card is clicked.
+        // Used when a card is clicked.
         cardSelected(card);
     }, false);
 }
@@ -99,7 +94,6 @@ const cardSelected = function (card) {
 
 // Keep track of the number of cards flipped
 let flippedCounter = 0;
-let firstCard, secondCard = null;
 let firstCatCardId, secondCatCardId, catCardId = "";
 let timerStarted = false;
 let moves = 0;
@@ -235,26 +229,26 @@ function endGame(title, message) {
     timeOverModal.innerHTML = `
         <div class="modal fade" id="timeOverModal" tabindex="-1" role="dialog" aria-labelledby="timeOverModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content modal-color modal-border">
-                <div class="modal-header">
-                  <h5 class="modal-title text-align" id="timeOverModalLabel">${title} &#128062;</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-content modal-color modal-border">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-align" id="timeOverModalLabel">${title} &#128062;</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <b>${message}</b>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        ${nextLevelLink}
+                        <a class="button" href="index.html">Close</a>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <p>
-                    <b>${message}</b>
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  ${nextLevelLink}
-                  <a class="button" href="index.html">Close</a>
-                </div>
-              </div>
             </div>
-          </div>
-        `;
+        </div>
+    `;
     const mainElement = document.getElementsByTagName("main").item(0);
     mainElement.appendChild(timeOverModal);
 
@@ -263,10 +257,11 @@ function endGame(title, message) {
     timeOverModalElement.show();
 }
 
-   let restartButton = document.getElementById("restart");
+// Function to restart Game
+let restartButton = document.getElementById("restart");
 
-    restartButton.addEventListener("click", restartGame);
+restartButton.addEventListener("click", restartGame);
     
-    function restartGame() {
-        window.location.reload();
-    }
+function restartGame() {
+    window.location.reload();
+}
