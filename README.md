@@ -102,28 +102,15 @@ The features of this project will include:
 
 The website consists of three pages:
 
-* The Home Page that consists of the name of the game, a "Play" button and 
-an "Instruction" button.
-  * The "Instruction" button displays a modal with the instructions that can be 
-closed by clicking the "x" button.
-  * The "Play" button takes the user to Level 1 of the game.
-* The 2nd page is the Level 1 game which consists of 12 cards, an "Exit" button
-and a "Restart" button.
-  * The user can either start playing the game by clicking a card; or
-  * The user can click the "Exit" button and is taken to the Home Page; or
-  * The user can click the "Restart" button where the cards will be shuffled and 
-the user can start the game again.
-* On completion of Level 1 a "Congratulations" modal displays and two buttons which consist
-of "Next Level" and "Close".
-  * If "Next Level" is clicked the user is taken to the 2nd level which is the 3rd 
-  page of the website.
-  * If "Close" is clicked, the user is taken back to the main menu. 
-* The 3rd page is the Level 2 game which consists of 16 cards, an "Exit" button and a 
-"Restart" button. 
-  * The user can do the exact same functions as on the Level 1 game.
-* On completion of Level 2, a "Congratulations" modal displays with one "Close" button 
-where the user is taken back to the main menu.
-
+* A Home Page that includes instructions on how to play the game;
+* A Level 1 Page that includes the cat cards to play the game;
+* A Level 2 Page that includes more cat cards than level 1 to play the game.
+ 
+The information is grouped logically for all game players. The Interaction Design (IXD) 
+will be consistent between pages with the only difference being that there are more cards 
+displaying on Level 2 compared to Level 1, to increase the difficulty. Once the user has 
+played the game, a modal displays advising that the level has been completed so game players 
+have clear feedback regarding the game status.
 
 <a id="skeleton"></a>
 ### 4. Skeleton
@@ -188,11 +175,70 @@ was modified for use.
 <a id="current-features"></a>
 **Current Features**
 
+Each page features:
+
+* The same colours on every page for consistency.
+* A copyright and developed by on the footer of each page.
+
+The Home Page features:
+
+* The name of the game, a "Play" button and an "Instruction" button.
+  * The "Instruction" button displays a modal with the instructions that can be 
+closed by clicking either the "x" button, the "close" button or by clicking anywhere 
+on the screen.
+  * The "Play" button takes the user to Level 1 of the game.
+
+The Level 1 Page features:
+
+* 12 cards, a "Timer", "Pairs", "Moves", an "Exit" button and a "Restart" button.
+  * The user can either start playing the game by clicking a card; or
+  * The user can click the "Exit" button and is taken to the Home Page; or
+  * The user can click the "Restart" button where the cards will be shuffled by 
+  reloading the page and the user can start the game again. The Timer resets to 
+  60 seconds and the Pairs and Moves reset to 0.
+  * Once the user starts the game, the Timer displays a 60 second countdown to 0.
+  * If the timer runs out before the user can find all the matching cards, then a 
+  modal displays advising the user that they have run out of time.
+  * Once a user finds a matching pair, the Pairs number increases accordingly.
+  * Once a user clicks a card, the Moves number increases accordingly.
+  * One feature on Level 1 is that if the 2 cards chosen are incorrect the cards 
+  will stay displayed on the screen until a user clicks a 3rd card. The user is 
+  unaware of this, but it is a feature that allows the cards to stay displayed 
+  longer to the user.
+  * On completion of Level 1 a "Congratulations" modal displays and two buttons which consist
+of "Next Level" and "Close".
+  * If "Next Level" is clicked the user is taken to the 2nd level which is the 3rd 
+  page of the website.
+  * If "Close" is clicked, the user is taken back to the main menu.
+
+The Level 2 Page features:
+
+* 16 cards, a "Timer", "Pairs", "Moves", an "Exit" button and a "Restart" button.
+  * The user can either start playing the game by clicking a card; or
+  * The user can click the "Exit" button and is taken to the Home Page; or
+  * The user can click the "Restart" button where the cards will be shuffled by 
+  reloading the page and the user can start the game again. The Timer resets to 
+  90 seconds and the Pairs and Moves reset to 0.
+  * Once the user starts the game, the Timer displays a 90 second countdown to 0.
+  * If the timer runs out before the user can find all the matching cards, then a 
+  modal displays advising the user that they have run out of time.
+  * Once a user finds a matching pair, the Pairs number increases accordingly.
+  * Once a user clicks a card, the Moves number increases accordingly.
+  * One feature on Level 2 is that if the 2 cards chosen are incorrect the cards 
+  will stay displayed on the screen until a user clicks a 3rd card. The user is 
+  unaware of this, but it is a feature that allows the cards to stay displayed 
+  longer to the user.
+  * On completion of Level 2 a "Congratulations" modal displays with one "Close" button 
+where the user is taken back to the main menu.
+
 <a id="future-features"></a>
 **Future Features to implement**
 
-* As a player, I would like to be able to replay the level that I am on after
-completing that level
+* The ability to replay the level that I am on after completing that level.
+* To have the time and moves display on the completion modal, so I know how long I took 
+and how many moves it took to complete the game.
+* A leader board so I can see if I can beat my own high score.
+* A leader board where I can try and beat other users high score.
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -235,6 +281,10 @@ when I added more information to this -->
 
 <a id="lessons-learned"></a>
 # Lessons Learned
+
+* JavaScript takes a while to get a grasp of.
+* You don't have to love every language straight away.
+* Practice, Practice, Practice!
 
 [Back to Table of Contents](#table-of-contents)
 
