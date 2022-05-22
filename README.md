@@ -290,14 +290,50 @@ when I added more information to this -->
 <a id="lessons-learned"></a>
 # Lessons Learned
 
-* JavaScript takes a while to get a grasp of.
-* You don't have to love every language straight away.
+* JavaScript takes a while to get a grasp of
+* You don't have to love every language straight away
+* There is nothing wrong with doing extra studies to understand a language
+* You know more than you give yourself credit for
 * Practice, Practice, Practice!
 
 [Back to Table of Contents](#table-of-contents)
 
 <a id="deployment"></a>
 # Deployment
+
+The code for this website was written in [Gitpd](https://www.gitpod.io/) and pushed to GitHub Pages from its 
+[GitHub repository](https://github.com/Medusas71/Cat-Memory-Game) using Chrome browser.
+
+The following process was used to deploy this website:
+
+* In the [GitHub repository](https://github.com/Medusas71/Cat-Memory-Game) click [Settings](https://github.com/Medusas71/Cat-Memory-Game/settings)
+* Select 'Pages' from the menu on the left and side
+* [GitHub Pages](https://github.com/Medusas71/Cat-Memory-Game/settings/pages) displays
+* Under 'Source', click 'Branch' and select 'Main'
+* Click 'Save'
+* A URL displays advising that your site has been published
+* Use this URL for your live website
+
+Each time the code is pushed from Gitpod to GitHub, the deployed site is automatically published.
+
+**Run this site locally**
+
+You can clone this repository directly into an editor of your choice and run the site locally.
+
+To do this:
+
+* From the [GitHub repository](https://github.com/Medusas71/Cat-Memory-Game) which is on the 'Code' heading page
+* Click the dropdown 'Code' button which is next to the green Gitpod button
+* You can either copy the link into your own IDE or 'Download Zip' which can be unzipped on your local machine
+* If you are copying the link into your own IDE - Open Git Bash
+* Change the current working directory to the location where you want the cloned directory
+* Type *git clone*, and then paste the URL you copied earlier
+* Press "Enter" to create your local clone
+* Click index.html in the created folder and the website will open up in the default browser
+
+Please Note: That if you are wanting to use Gitpod as your IDE you will need to install the 
+[Gitpod Browser Extension for Chrome](https://www.gitpod.io/docs/browser-extension/). After installation, 
+restart the browser.
 
 [Back to Table of Contents](#table-of-contents)
 
