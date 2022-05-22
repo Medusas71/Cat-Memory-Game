@@ -128,6 +128,7 @@ Here are the [wireframes](./documents/cat-memory-game.pdf):
 * [1st Level Complete Wireframe](./readme-images/wireframes/1st-level-complete.png)
 * [Level 2 - 16 Cards Wireframe](./readme-images/wireframes/level2-16-cards.png)
 * [2nd Level Complete Wireframe](./readme-images/wireframes/2nd-level-complete.png)
+* [404 Error Wireframe](./readme-images/wireframes/404-error.png)
 
 <a id="surface"></a>
 ### 5. Surface 
@@ -166,6 +167,7 @@ Imagery
 was modified for use.
 * The same image used in the homepage background, has been used on the back of each card.
 * All cat images used for the cards were sourced from [Unsplash](https://unsplash.com/).
+* The 404 vector created by [freepik](https://www.freepik.com/vectors/404'>).
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -256,17 +258,19 @@ Frameworks, Libraries, Programs and Resources Used
 <!-- Created Ordered Lists via markdown style guide. I didn't want to have to keep updating the numbers in this list
 when I added more information to this -->
 
+1. [Am I Responsive](https://ui.dev/amiresponsive) - to create a Home Page image on each device for use in the Readme file
 1. [Autoprefixer CSS Online](https://autoprefixer.github.io/) - to ensure all vendor prefixes were included in CSS
 1. [Balsamiq](https://balsamiq.com/) - wireframes
 1. [Bootstrap 4.6 CDN](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - to make the website responsive and to use modals
 1. [Code Institute course content](https://learn.codeinstitute.net/login?next=/) - main source of fundamental knowledge
 1. [Coolors](https://coolors.co/) - to display colour palettes
 1. [Favicon Generator](https://favicon.io/emoji-favicons/) - to generate the favicon from an emoji
+1. [Freepik](https://www.freepik.com/) - 404 error page
 1. [Git](https://git-scm.com/) - version control
 1. [GitHub](https://github.com/) - hosting service 
 1. [GitPod](https://www.gitpod.io/) - IDE
 1. [Google Fonts](https://fonts.google.com/) - typography
-1. [jQuery](https://jquery.com/) - for the modal wording
+1. [jQuery](https://jquery.com/) - for the modal
 1. [Lighthouse](https://developers.google.com/web/tools/lighthouse) - to check for issues on all pages
 1. [Markdown Guide](https://www.markdownguide.org/basic-syntax/) - for creating this numbered list and not having to number each item individually
 1. [pngset](https://pngset.com/) - for background cat image
