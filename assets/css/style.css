@@ -72,8 +72,8 @@ h3 {
 
 .card {
     position: relative;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     background-color: transparent; /* credits to stack overflow - see bugs/fixes in testing.md */    
     border: none; /* remove automatic border set by Bootstrap */    
     border-radius: 10%;
