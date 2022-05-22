@@ -343,18 +343,20 @@ restart the browser.
 Code
 
 * David Bowers, Code Institute student for his assistance with css positioning via a Webinar
-* Scott Böning, former Code Institute student for his assistance with the html and css
-* Mr_Bim, former Code Institute student for explaining various parts of JavaScript to me
-* Manni, former Code Institute student for explaining various parts of JavaScript to me
+* Scott Böning_alumnus, for his assistance with the html and css
+* Mr_Bim_alumni, for explaining various parts of JavaScript to me
+* Manni_alumnus, for explaining various parts of JavaScript to me
 * My friend Arik for explaining various parts of JavaScript to me
 * My friend Rob for explaining various parts of JavaScript to me
 * Former students and current students on Slack for their support
-* Code Academy for a refresher on JavaScript: https://www.codecademy.com/ 
+* Code Academy for a refresher on JavaScript: https://www.codecademy.com/
+* Memory Game - Vanilla JavaScript for ideas: https://marina-ferreira.github.io/tutorials/js/memory-game/
+
 
 The below code was sourced from the following various places and modified to suit my code:
 * JavaScript Object Destructing: https://www.javascripttutorial.net/es6/javascript-object-destructuring/
 * How to shuffle an array: https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/
-* How to create multiple flip cards that flip with a click: https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick  
+* How to create multiple flip cards that flip with an onclick(): https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick  
 * Creating a countdown - function for timer: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
 * How to trigger a Bootstrap modal programmatically: https://stackoverflow.com/questions/11404711/how-can-i-trigger-a-bootstrap-modal-programmatically 
 
