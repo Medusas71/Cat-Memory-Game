@@ -249,19 +249,25 @@ Languages Used
 
 1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
 2. [CSS3](https://en.wikipedia.org/wiki/CSS)
+3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 Frameworks, Libraries, Programs and Resources Used
 
 <!-- Created Ordered Lists via markdown style guide. I didn't want to have to keep updating the numbers in this list
 when I added more information to this -->
 
+1. [Autoprefixer CSS Online](https://autoprefixer.github.io/) - to ensure all vendor prefixes were included in CSS
 1. [Balsamiq](https://balsamiq.com/) - wireframes
 1. [Bootstrap 4.6 CDN](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - to make the website responsive and to use modals
+1. [Code Institute course content](https://learn.codeinstitute.net/login?next=/) - main source of fundamental knowledge
 1. [Coolors](https://coolors.co/) - to display colour palettes
+1. [Favicon Generator](https://favicon.io/emoji-favicons/) - to generate the favicon from an emoji
 1. [Git](https://git-scm.com/) - version control
 1. [GitHub](https://github.com/) - hosting service 
 1. [GitPod](https://www.gitpod.io/) - IDE
 1. [Google Fonts](https://fonts.google.com/) - typography
+1. [jQuery](https://jquery.com/) - for the modal wording
+1. [Lighthouse](https://developers.google.com/web/tools/lighthouse) - to check for issues on all pages
 1. [Markdown Guide](https://www.markdownguide.org/basic-syntax/) - for creating this numbered list and not having to number each item individually
 1. [pngset](https://pngset.com/) - for background cat image
 1. [Slack](https://slack.com/) - main source of assistance from other students, developers and documents/resources
@@ -270,12 +276,14 @@ when I added more information to this -->
 1. [TinyPNG](https://tinypng.com/) - efficient compression of images for the site
 1. [Unsplash](https://unsplash.com/) - for cat images on cards
 1. [W3Schools](https://www.w3schools.com/) - to assist with code
+1. [Wave](https://wave.webaim.org/) - to ensure the content was accessible
 1. [WebAIM](https://webaim.org/resources/contrastchecker/) - web accessibility contrast checker
-
 
 [Back to Table of Contents](#table-of-contents)
 <a id="testing"></a>
 # Testing
+
+[See Testing.md for testing information](TESTING.md)
 
 [Back to Table of Contents](#table-of-contents)
 
