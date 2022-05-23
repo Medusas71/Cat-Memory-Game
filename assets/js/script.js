@@ -71,7 +71,6 @@ for (let i = cardArray.length - 1; i > -1; --i) {
 
     // Populate the screen grid with the cat picture
     document.getElementById("cardNum" + i).src = cardArray[i][1];
-    console.log(i + " " + cardArray[i][0]);
 }
 
 // Create multiple flip cards that flip with click - Sourced from the web - see Readme.md credits
@@ -88,7 +87,6 @@ for (let card of document.querySelectorAll(".card")) {
 const cardSelected = function (card) {
     // Flip the card
     card.classList.toggle("flipped");
-    console.log("flipped" + card);
     cardFlipped(card);
 };
 
@@ -104,19 +102,12 @@ let pairs = 0;
 // This is called when a card is flipped
 function cardFlipped(card) {
     increaseMoves();
-    console.log("timerStarted = " + timerStarted);
     // Increase the card flipped counter
     flippedCounter++;
-
-    // Get the image (cat pic) for the card that was clicked
-    const catCardImg = (card.getElementsByClassName("card-front")[0].src).slice();
 
     // Get the id for the card that has been clicked
     catCardId = (card.getAttribute("id")).slice();
 
-    console.log("image = " + catCardImg);
-    console.log("Flipped Counter = " + flippedCounter);
-    console.log("id_of_cat_card = " + (card.getAttribute("id")).slice());
     if (flippedCounter === 1) {
         // Remember first card by taking a copy of its id
         firstCatCardId = (card.getAttribute("id")).slice(); // Don't allow the first card to be clicked again
@@ -139,21 +130,16 @@ function cardFlipped(card) {
         // Looks for a matching card
         card.removeEventListener("click", card.fn, false);
         if (firstCatCardFrontElement.src === secondCatCardFrontElement.src) {
-            console.log("Cards Match!");
             // Reset counter to restart matching
             flippedCounter = 0;
             // Increase pairs
             increasePairs();
-        } else {
-            console.log("Cards Don't Match!");
-        }
+        }    
     } else if (flippedCounter === 3) {
         // Flip the first 2 cards face down
         document.getElementById(firstCatCardId).classList.toggle("flipped");
         document.getElementById(secondCatCardId).classList.toggle("flipped");
         card.removeEventListener("click", card.fn, false);
-
-        console.log("firstCatCardId = " + firstCatCardId + "  secondCatCardId = " + secondCatCardId);
 
         let firstCardId = firstCatCardId.slice();
 
