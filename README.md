@@ -1,6 +1,9 @@
 <h1 align="center">Cat Memory Game</h1>
 
 <h3>Stream Two Project - Interactive Frontend Development</h3>
+<br>
+
+[View the deployed Cat Memory Game](https://medusas71.github.io/Cat-Memory-Game/)
 
 **Please note: To open any links in this document in a new browser tab, press 'CTRL + Click'.**
 
@@ -30,6 +33,8 @@
 
 <!-- /Markdown TOC -->
 </details>
+
+![Final Website](./readme-images/website-final.jpg)
 
 <a id="description"></a>
 # Description  
@@ -133,7 +138,7 @@ Here are the [wireframes](./documents/cat-memory-game.pdf):
 <a id="surface"></a>
 ### 5. Surface 
 
-Colour scheme
+Colour Scheme
 
 * I made the background colour of the pages purple #660099 for two reasons. 
   1. Purple is a royal colour and cats think they are royalty. 
@@ -155,7 +160,7 @@ Colours sourced using [Coolors](https://coolors.co/660099-08b5c2-000000-e0e1e4)
 
 Typography
 
-* The fonts were sourced from [Google Fonts](https://fonts.google.com/)
+* The fonts were sourced from [Google Fonts](https://fonts.google.com/).
 * The Fresca font is the main font used throughout the website with sans-serif as the fallback font.
 This font was chosen as it compliments the Flavors font that is used for the titles.
 * The Flavors font was used for all headings with sans-serif as the fallback font.
@@ -354,9 +359,12 @@ Code
 * My friend Arik for explaining various parts of JavaScript to me
 * My friend Rob for explaining various parts of JavaScript to me
 * Former students and current students on Slack for their support
-* Code Academy for a refresher on JavaScript: https://www.codecademy.com/
-* Memory Game - Vanilla JavaScript for ideas: https://marina-ferreira.github.io/tutorials/js/memory-game/
-
+* Tutor Support for assistance in helping me understand some code
+* My mentor for all his support and assistance
+* [Stack Overflow](https://stackoverflow.com/) for resolving specific issues
+* [Code Academy](https://www.codecademy.com/) for a refresher on JavaScript
+* [Memory Game - Vanilla JavaScript](https://marina-ferreira.github.io/tutorials/js/memory-game/) for ideas
+* See Bugs/Fixes in the [TESTING.md](TESTING.md) for specific credits for code fixes
 
 The below code was sourced from the following various places and modified to suit my code:
 * JavaScript Object Destructing: https://www.javascripttutorial.net/es6/javascript-object-destructuring/
