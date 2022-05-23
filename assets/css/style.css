@@ -86,7 +86,6 @@ h3 {
 }
 
 .flip-card {
-    /* credits to stack overflow - see bugs/fixes in testing.md */
     /* Use CSS classes to toggle */
     /* received assistance from Tutor Support with Flex - see bugs/fixes in testing.md */
     display: -webkit-box;
