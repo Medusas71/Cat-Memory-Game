@@ -241,6 +241,7 @@ where the user is taken back to the main menu.
 and how many moves it took to complete the game.
 * A leader board so I can see if I can beat my own high score.
 * A leader board where I can try and beat other users high score.
+* More levels.
 
 [Back to Table of Contents](#table-of-contents)
 
