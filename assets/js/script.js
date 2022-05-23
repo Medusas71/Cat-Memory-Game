@@ -59,8 +59,8 @@ for (let i = cardArray.length - 1; i > -1; --i) {
     let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
 
     // Read the card at the current i position
-    catNumber = cardArray[i][0];
-    catPic = cardArray[i][1];
+    let catNumber = cardArray[i][0];
+    let catPic = cardArray[i][1];
 
     // And swap it with the random element.
     cardArray[i][0] = cardArray[j][0];
@@ -253,7 +253,7 @@ function endGame(title, message) {
     mainElement.appendChild(timeOverModal);
 
     // Launch the modal programmatically - Sourced from the web - see Readme.md credits
-    const timeOverModalElement = new bootstrap.Modal(document.getElementById("timeOverModal"), {});
+    const timeOverModalElement = new bootstrap.Modal(document.getElementById("timeOverModal"), {});    
     timeOverModalElement.show();
 }
 
