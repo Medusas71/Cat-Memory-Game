@@ -22,10 +22,27 @@
 </details>
 
 <a id="testing"></a>
-# Testing 
+# Testing
+
+Testing was conducted manually and through different validator services on each page of the website.
 
 <a id="validators"></a>
 ## Validators
+
+* [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used on each page 
+to ensure that there were no errors or warning in my HTML document and was validated by direct input. 
+I had no errors or warning on any page:
+
+![W3C Markup HTML results](./testing-images/w3c/results-w3c-markup-html.jpg)
+
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to ensure 
+that there were no errors or warning in my CSS document and was validated by direct input. I had no errors 
+or warnings display:
+
+![W3C CSS Validation results](./testing-images/w3c/results-w3c-css.jpg)
+
+* [Autoprefixer CSS Online](https://autoprefixer.github.io/) was used to ensure that all vendor prefixes 
+were included in CSS. The results were copied into the style.css file.
 
 <a id="lighthouse"></a>
 ## Lighthouse
@@ -68,5 +85,13 @@ where I used background-color: transparent, to remove the Bootstrap default back
     When hovering over the corner of the Exit and Restart Game buttons, the button would change background colour to black, however the words would not change colour until the cursor is closer to the letters. So there was a moment when the button is all black.
 * **Fix**: The issue was discussed with the channel lead for MS2 project, Scott Boning. Upon advice received I removed the div from above and below the <a> tag and placed the classes from the div in the <a> tag. This gave a smooth transition ensuring that the letters change colour immediately when hovering. The delay had been removed.
 
+**4. Issue**:
+    My cards weren't centered aligned and I had issues with the cards not being responsive.
+* **Fix**: I spoke to Tutor Support and they advised me to use display: flex, which fixed the issue.
+
+**5. Issue**:
+    My buttons weren't aligned correctly.
+* **Fix**: I spoke to Tutor Support and they advised me to add in a flex-row class with a display of flex, which fixed the issue.
+
 **JavaScript**
-The issues that I had with JavaScript was working out how to write the code. I did a lot of googling and found information from W3 Schools and various other places on the web. Please see the Readme.md credits for this information.
+The issues that I had with JavaScript was working out how to write the code. I did a lot of googling and found information from W3 Schools and various other places on the web. Please see the [Readme.md](README.md) credits for this information.
