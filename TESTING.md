@@ -84,19 +84,19 @@ This fixed the issue. There was a future issue with this - see Level 1 & 2 Page 
 
 **Level 1 & 2 Pages**
 
-**1. Issue**:
+**1. Issue**:  
     Once I added the cards in, the footer kept going higher up the page. I tried lots of different 
 changes in my css to get this to work. Nothing was working. 
 * **Fix**: I searched Slack and found a link to a [YouTube page](https://www.youtube.com/watch?v=yc2olxLgKLk) 
 and followed the flex instructions. This has rectified the issue with my footer moving. 
 
-**2. Issue**:
+**2. Issue**:  
     I was having an issue when creating the cards using Bootstrap where the Bootstrap background colour kept 
 displaying a white border around the card that I didn't want.
 * **Fix**: I found the answer on [Stack Overflow](https://stackoverflow.com/questions/45408037/how-to-remove-background-color-in-bootstrap) 
 where I used background-color: transparent, to remove the Bootstrap default background colour.
 
-**3. Issue**:
+**3. Issue**:  
     When hovering over the corner of the Exit and Restart Game buttons, the button would change background colour 
 to black, however the words would not change colour until the cursor is closer to the letters. So there was a moment 
 when the button is all black.
@@ -104,11 +104,11 @@ when the button is all black.
 the "div" from above and below the "a" tag and placed the classes from the "div" in the "a" tag. This gave a smooth transition 
 ensuring that the letters change colour immediately when hovering. The delay had been removed.
 
-**4. Issue**:
+**4. Issue**:  
     My cards weren't centered aligned and I had issues with the cards not being responsive.
 * **Fix**: I spoke to Tutor Support and they advised me to use display: flex, which fixed the issue.
 
-**5. Issue**:
+**5. Issue**:  
     My buttons weren't aligned correctly.
 * **Fix**: I spoke to Tutor Support and they advised me to add in a flex-row class with a display of flex, which fixed the issue.
 
@@ -117,20 +117,24 @@ The issues that I had with JavaScript was working out how to write the code. I d
 W3 Schools and various other places on the web. Please see the [Readme.md](README.md) credits for this information.
 
 **HTML Validator Testing**  
-Upon creating the card-front and card-back in level1.html and level2.html, I placed both of these cards in their own "img" tag. 
+**Issue**:  
+  * Upon creating the card-front and card-back in level1.html and level2.html, I placed both of these cards in their own "img" tag. 
 The card-back included a "src" of where the image was kept in the Explorer menu. The card-front was obtaining the image from the 
 JavaScript file and therefore did not need a "src". 
 
-Upon testing both level1.html and level2.html in the HTML Validator I was receiving errors from the card-front "img" tag stating 
+  * Upon testing both level1.html and level2.html in the HTML Validator I was receiving errors from the card-front "img" tag stating 
 that I was missing a required attribute of "src". The "src" wasn't required as there was no actual image source in the html.  
 
-I asked in Slack on how I could rectify this and was told to change the "img" tag to a "div" as there was no image actually in the 
+**First Fix**:  
+  * I asked in Slack on how I could rectify this and was told to change the "img" tag to a "div" as there was no image actually in the 
 "img" tag as the image was coming from JavaScript via the "id".  
 
-I changed all the card-front from "img" to "div" but that caused another issue as none of the front of my cards would display on the game.  
+  * I changed all the card-front from "img" to "div" but that caused another issue as none of the front of my cards would display on the game.  
 
-I googled ways to include an "img" tag without a "src" attribute and found a fix on [Stack Overflow](https://stackoverflow.com/questions/5775469/whats-the-valid-way-to-include-an-image-with-no-src) where I could add "src="data:," which is an empty media-type to each card-front and this would rectify the issue.  
+**Second Fix**:  
+  * I googled ways to include an "img" tag without a "src" attribute and found a fix on [Stack Overflow](https://stackoverflow.com/questions/5775469/whats-the-valid-way-to-include-an-image-with-no-src) where I could add "src="data:," which is an empty media-type to each card-front and this
+  would rectify the issue.  
 
-I changed all the "div" on each card-front back to "img" added the "src" attribute and an alt tag.  
+  * I changed all the "div" on each card-front back to "img" added the "src" attribute and an alt tag.  
 
-I rechecked the code through the W3C HTML Validator and there were no errors found. So this fixed my issue.
+  * I rechecked the code through the W3C HTML Validator and there were no errors found. So this fixed my issue.
