@@ -37,13 +37,13 @@ header {
 }
 
 h1 {
-    color: #000;
+    color: #D6D6D6;
     font-size: 30px;
     font-family: "Flavors", sans-serif;
 }
 
 h2 {
-    color: #000;
+    color: #D6D6D6;
     font-size: 15px;
     font-family: "Flavors", sans-serif;
 }
@@ -189,6 +189,8 @@ a:hover {
 
 .heading {
     margin-top: 30px;
+    color: #000000;
+
 }
 
 .play,

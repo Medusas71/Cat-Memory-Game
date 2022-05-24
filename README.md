@@ -144,19 +144,25 @@ Colour Scheme
   1. Purple is a royal colour and cats think they are royalty. 
   2. My favourite colour is purple.
 * I then wanted a blue/green colour to compliment the purple. I selected a Maximum Blue Green #08B5C2.
-* I kept the text colour generic and used Black #000 in some parts and a Gainsboro colour #E0E1E4 for some of the other 
-text, such as copyright information in the footer, the numbers on level 1 and level 2 and the exit and restart game buttons. 
-I originally used white, however the white was too bright on the screen.
+* I originally kept the text colour generic and used Black #000 in some parts, however this 
+did not meet accessibility guidelines so I changed the Black #000 to Light Grey #D6D6D6.
+* I used a Gainsboro colour #E0E1E4 for some of the other text, such as copyright information in the footer, 
+the numbers on level 1 and level 2 and the exit and restart game buttons. 
+* I originally used white, however the white was too bright on the screen.
 * The hover colour is Gainsboro #E0E1E4 when hovered over the black text on the homepage.
-* The buttons hover colour on Level 1 and Level 2 is black.
+* The buttons hover colour on Level 1 and Level 2 is Black #000.
 
 
 ![4 Colours](./readme-images/website-colours.jpg)
 Colours sourced using [Coolors](https://coolors.co/660099-08b5c2-000000-e0e1e4)
 
-* The colours were checked through [WebAIM](https://webaim.org/resources/contrastchecker/) to ensure that the colours were accessible.
+* The colours were checked through [WebAIM](https://webaim.org/resources/contrastchecker/) to ensure that the colours 
+were accessible.
+* The black against the purple was not accessible and did not pass the contrast checker, so the black was changed to light 
+grey which passed the accessibility test.
 
 ![WebAIM Contrast Checker](./readme-images/webaim-contrast-checker.jpg)
+![WebAIM Contrast Checker1](./readme-images/webaim-contrast-checker1.jpg)
 
 Typography
 
