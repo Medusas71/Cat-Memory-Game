@@ -68,8 +68,75 @@ I had one warning and one undefined variable display:
 <a id="user-stories"></a>
 ## User Stories  
 
+### Testing User Stories from the UX section of [the main README.md document](README.md)
+
+<details open>
+<summary><b>(click to expand or hide)</b></summary>
+
+Each screenshot displays a red square around each item that is needed to achieve the testing criteria.
+
+### Player Goals
+
+1.  As a player, I would like to improve my concentration skills, improve my focus skills and improve
+my attention to detail.
+    * This is achieved by having similar cards on each level that relies on your concentration skills, 
+focus skills and attention to detail in order to find the matching pairs. The cats either have their 
+tongues poking out or are wearing glasses and in the 2nd level I have included 2 different yawning cats.
+
+![1-player-goals](./testing-images/user-stories/cats-tongue-poking-out.jpg)
+
+![1-player-goals](./testing-images/user-stories/cats-wearing-sunglasses.jpg)
+
+![1-player-goals](./testing-images/user-stories/cats-yawning.jpg)
+
+2.  As a player, I would like to have clear instructions on how to play the game.
+    * This is achieved by clicking the "Instructions" link on the index.html page.
+
+![2-player-goals](./testing-images/user-stories/instructions-link.jpg)
+
+![2-player-goals](./testing-images/user-stories/instructions.jpg)
+
+3. As a player, I would like to be able to increase the level of difficulty to improve brain functionality.
+    * This is achieved by having a 2nd level with an increase of cards and 2 different cats to match.
+
+![3-player-goals](./testing-images/user-stories/next-level.jpg)
+
+![3-player-goals](./testing-images/user-stories/level2.jpg)
+
+4. As a player, I would like to exit the game at any time.
+    * This is achieved by clicking the "Exit" button on either Level 1 or Level 2.
+
+![4-player-goals](./testing-images/user-stories/level1-exit.jpg)
+
+![4-player-goals](./testing-images/user-stories/level2-exit.jpg)
+
+5. As a player, I would like to be able to restart the level.
+    * This is achieved by clicking the "Restart" button on either Level 1 or Level 2.
+
+![5-player-goals](./testing-images/user-stories/level1-restart.jpg)
+
+![5-player-goals](./testing-images/user-stories/level2-restart.jpg)
+
+6. As a player, I would like to click a card, the card flips and displays a cat picture
+    * This is achieved by clicking a card on either level.
+
+![6-player-goals](./testing-images/user-stories/click-a-card.jpg)
+
+7. As a player, I would like to have the cards that matched, stay flipped so I know 
+exactly how many cards are left to play.
+   * This is achieved by finding a matching pair and clicking another card afterwards.
+
+![7-player-goals](./testing-images/user-stories/matching-cards-flipped.jpg)
+
+8. As a player, I would like to be able to click the cards as many times as required 
+until the matching pair displays.
+   * This is achieved by clicking as many cards as you like until a matching pair displays.  
+    <p>&nbsp;</p>
+9. As a player, I would like to have fun.
+   * This is achieved by playing the game and having a laugh at the cat images.
+
 <a id="manual-testing"></a>
-## Manual testing of all elements and functionality on every page
+## Manual testing of all elements and functionality on every page  
 
 <a id="bugs-fixes"></a>
 ## Bugs/Fixes  
