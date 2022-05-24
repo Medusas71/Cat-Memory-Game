@@ -138,6 +138,34 @@ until the matching pair displays.
 <a id="manual-testing"></a>
 ## Manual testing of all elements and functionality on every page  
 
+### Browsers tested:
+
+### Devices tested:
+
+<details open>
+<summary><b>(click to expand or hide)</b></summary>
+
+The testing below is for an end user, hence why it is in so much detail. This way anyone 
+can check each step and verify the correct outcome.  
+
+| Page      | Section       | Action        | Expected Behaviour     | Result   |  
+| --------- | ------------- | ------------- | ---------------------- | -------- |  
+| Home Page | Tab at top of page |  
+|           | Background |  
+|           | Main |  
+|           | Footer |  
+|           | Responsiveness |  
+| Level 1   | Tab at top of page |  
+|           | Background |  
+|           | Main |  
+|           | Footer |  
+|           | Responsiveness |  
+| Level 2   | Tab at top of page |  
+|           | Background |  
+|           | Main |  
+|           | Footer |  
+|           | Responsiveness |  
+
 <a id="bugs-fixes"></a>
 ## Bugs/Fixes  
 
