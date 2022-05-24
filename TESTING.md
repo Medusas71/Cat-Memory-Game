@@ -46,6 +46,19 @@ or warnings display:
 * [Autoprefixer CSS Online](https://autoprefixer.github.io/) was used to ensure that all vendor prefixes 
 were included in CSS. The results were copied into the style.css file.
 
+* [JSHint.com](https://jshint.com/) was used to ensure there were no errors in my JavaScript document. 
+I had one warning and one undefined variable display:
+
+  * The undefined variable is a "bootstrap" variable. I spoke to Tutor support regarding this and was 
+ advised that the code works fine and there are no console errors due to this undefined variable. It is 
+ just that jshint isn't aware of the bootstrap script and doesn't import bootstrap like my project does.  
+
+  * I also discussed the one warning with Tutor support. As per the screenshot below it is only a warning. 
+ At a later stage I can update the JavaScript code to remove this warning. As it isn't an error, this 
+ will be rectified at a later stage.
+
+ ![JSHint Validation results](./testing-images/jshint/jshint.jpg)
+
 <a id="lighthouse"></a>
 ## Lighthouse
 
