@@ -262,28 +262,39 @@ ensuring that the letters change colour immediately when hovering. The delay had
 * **Fix**: I spoke to Tutor Support and they advised me to add in a flex-row class with a display of flex, which fixed the issue.
 
 **JavaScript**  
-The issues that I had with JavaScript was working out how to write the code. I did a lot of googling and found information from 
-W3 Schools and various other places on the web. Please see the [Readme.md](README.md) credits for this information.
+The issues that I had with JavaScript was working out how to write the code and generally trying to make it work. I did a lot of googling and found information from W3 Schools and various other places on the web. Please see the [Readme.md](README.md) credits for this information.
 
 **HTML Validator Testing**  
 **Issue**:  
-  * Upon creating the card-front and card-back in level1.html and level2.html, I placed both of these cards in their own "img" tag. 
-The card-back included a "src" of where the image was kept in the Explorer menu. The card-front was obtaining the image from the 
-JavaScript file and therefore did not need a "src". 
+  * Upon creating the card-front and card-back in level1.html and level2.html, I placed both of these cards in their own "img" tag. The card-back included a "src" of where the image was kept in the Explorer menu. The card-front was obtaining the image from the JavaScript file and therefore did not need a "src". 
 
-  * Upon testing both level1.html and level2.html in the HTML Validator I was receiving errors from the card-front "img" tag stating 
-that I was missing a required attribute of "src". The "src" wasn't required as there was no actual image source in the html.  
+  * Upon testing both level1.html and level2.html in the HTML Validator I was receiving errors from the card-front "img" tag stating that I was missing a required attribute of "src". The "src" wasn't required as there was no actual image source in the html.  
 
 **First Fix**:  
-  * I asked in Slack on how I could rectify this and was told to change the "img" tag to a "div" as there was no image actually in the 
-"img" tag as the image was coming from JavaScript via the "id".  
+  * I asked in Slack on how I could rectify this and was told to change the "img" tag to a "div" as there was no image actually in the "img" tag as the image was coming from JavaScript via the "id".  
 
   * I changed all the card-front from "img" to "div" but that caused another issue as none of the front of my cards would display on the game.  
 
 **Second Fix**:  
-  * I googled ways to include an "img" tag without a "src" attribute and found a fix on [Stack Overflow](https://stackoverflow.com/questions/5775469/whats-the-valid-way-to-include-an-image-with-no-src) where I could add "src="data:," which is an empty media-type to each card-front and this
-  would rectify the issue.  
+  * I googled ways to include an "img" tag without a "src" attribute and found a fix on [Stack Overflow](https://stackoverflow.com/questions/5775469/whats-the-valid-way-to-include-an-image-with-no-src) where I could add "src="data:," which is an empty media-type to each card-front and this   would rectify the issue.  
 
   * I changed all the "div" on each card-front back to "img" added the "src" attribute and an alt tag.  
 
-  * I rechecked the code through the W3C HTML Validator and there were no errors found. So this fixed my issue.
+  * I rechecked the code through the W3C HTML Validator and there were no errors found. So this fixed my issue.  
+
+**Console Log Testing**  
+  The game was tested whilst having the Console log open in Dev Tools on Chrome, to test for any console errors. A few errors were caught and these were discussed with my mentor as I could not work out how to rectify them.
+
+  **Error One** 
+  * Upon opening the home page, I was receiving a site.webmanifest 404 error. I googled the error but wasn't sure in how to fix this or how important the file was.
+
+  * **Fix**: I spoke to my mentor and he advised that link wasn't needed and that I could delete it from every html file. This rectified the issue and the error was removed.
+
+  **Error Two**
+  * Upon opening the home page, I received an Upcaught TypeError that one of the destructure properties was undefined. I was very confused by this error.
+
+  * **Fix**: I spoke to my mentor and after showing me some debugging tools he advised that as the error was only displaying on the index.html page that I can remove the javascript script from the footer as that was what is causing the error. I removed the javascript script from the footer of the index.html file and this resolved the issue.  
+
+  Now there are no console errors when playing the game.
+
+  
