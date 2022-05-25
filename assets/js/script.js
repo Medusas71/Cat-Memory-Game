@@ -82,7 +82,6 @@ for (let card of document.querySelectorAll(".card")) {
     }, false);
 }
 
-// Function that is called when a card is clicked.
 // It flips the card (toggle) and then checks for a match.
 const cardSelected = function (card) {
     // Flip the card
@@ -125,8 +124,8 @@ function cardFlipped(card) {
         const secondCatCardElement = document.getElementById(secondCatCardId);
 
         const secondCatCardFrontElement = secondCatCardElement.getElementsByClassName("card-front")[0];
+        
         // Remove the event listener so cards can't be re-clicked
-
         // Looks for a matching card
         card.removeEventListener("click", card.fn, false);
         if (firstCatCardFrontElement.src === secondCatCardFrontElement.src) {
@@ -161,10 +160,10 @@ function cardFlipped(card) {
     }
 }
 
-// Upon starting the game, the timer needs to start counting down
-// Function for timer - Sourced from the web - see Readme.md credits
 let downloadTimer;
 
+// Upon starting the game, the timer needs to start counting down
+// Function for timer - Sourced from the web - see Readme.md credits
 function startTimer() {
     let timeleft = timer;
     const gameOverText = "Game Over";
@@ -243,11 +242,11 @@ function endGame(title, message) {
     timeOverModalElement.show();
 }
 
-// Function to restart Game
 let restartButton = document.getElementById("restart");
 
 restartButton.addEventListener("click", restartGame);
-    
+
+// Function to restart Game   
 function restartGame() {
     window.location.reload();
 }
