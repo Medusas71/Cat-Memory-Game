@@ -44,19 +44,19 @@ h1 {
 
 h2 {
     color: #D6D6D6;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Flavors", sans-serif;
 }
 
-h3 {
+/* h3 {
     color: #E0E1E4;
     font-size: 10px;
     font-family: "Fresca", sans-serif;
     letter-spacing: 1px;
-}
+} */
 
 .container-fluid {
-    width: 70%;
+    width: 80%;
 }
 
 /*----------------------------------------------------Game Statistics */
@@ -255,18 +255,22 @@ footer {
 
 @media screen and (min-width: 576px) {
 
-    h2 {
+    .container-fluid {
+        width: 70%;
+    }
+    
+    /* h2 {
         font-size: 35px;
-    }
+    } */
 
-    .game-stats {
-        font-size: 30px;
-    }
+    /* .game-stats {
+        font-size: 15px;
+    } */
 
-    .card {
+    /* .card {
         width: 5em;
         height: 5em;
-    }
+    } */
 
     .button {
         font-size: 15px;
@@ -278,7 +282,7 @@ footer {
 @media screen and (min-width: 768px) {
 
     .container-fluid {
-        width: 70%;
+        width: 60%;
     }
 
     .index-box {
@@ -288,6 +292,14 @@ footer {
 
     h1 {
         font-size: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .game-stats {
+        font-size: 20px;
     }
 
     .play,
@@ -303,9 +315,9 @@ footer {
         font-size: 20px;
     }
 
-    .button {
+    /* .button {
         font-size: 20px;
-    }
+    } */
 }
 
 /*-------------------------large devices (desktops, 992px and up)---*/
@@ -313,16 +325,16 @@ footer {
 @media screen and (min-width: 992px) {
 
     .container-fluid {
-        width: 60%;
+        width: 50%;
     }
 
-    .card {
+    /* .card {
         width: 6em;
         height: 6em;
-    }
+    } */
 
     .button {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -331,7 +343,7 @@ footer {
 @media screen and (min-width: 1200px) {
 
     .container-fluid {
-        width: 60%;
+        width: 40%;
     }
 
     .index-box {
@@ -339,10 +351,10 @@ footer {
         max-width: 400px;
     }
 
-    .card {
+    /* .card {
         width: 7em;
         height: 7em;
-    }
+    } */
 }
 
 /*-------------------------extra extra large devices (extra large desktops, 1920px and up)---*/
@@ -350,7 +362,7 @@ footer {
 @media screen and (min-width: 1920px) {
 
     .container-fluid {
-        width: 50%;
+        width: 30%;
     }
 
     .index-box {
@@ -359,20 +371,24 @@ footer {
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .game-stats {
-        font-size: 40px;
+        font-size: 35px;
+    }
+
+    .button {
+        font-size: 25px;
     }
 
     .card {
-        width: 10em;
-        height: 10em;
+        width: 8em;
+        height: 8em;
     }
 }
 
