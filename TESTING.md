@@ -196,7 +196,7 @@ exactly how many cards are left to play.
 8. As a player, I would like to be able to click the cards as many times as required 
 until the matching pair displays.
    * This is achieved by clicking as many cards as you like until a matching pair displays.  
-    <p>&nbsp;</p>
+
 9. As a player, I would like to have fun.
    * This is achieved by playing the game and having a laugh at the cat images.  
 
@@ -242,13 +242,14 @@ can check each step and verify the correct outcome.
 |           |       | Hover over the black text on "Play" and "Instructions" | The text changes to white | Pass | 
 |           |       | Click the words Play | You are taken to Level 1 of the game | Pass |  
 |           |       | After returning back to the home page, click the words Instructions | A blue/green modal displays with the instructions written in black and a Close button displays | Pass |  
+|           |       | Hover over the Close button | Upon hover the background colour changes to black | Pass |  
 |           | Footer | Confirm the "copyright" information and the "developed by" information display in the middle of the footer | Copyright and developed by information displays in the middle of the footer | Pass |  
 |           | Responsiveness | Go to Dev Tools and confirm the page displays correctly when you reduce and expand the margins | The correct page displays | Pass |  
 |           |   | Confirm that there is no scroll bar either horizontally or vertically displayed | No scroll bar displays either horizontally or vertically | Pass |  
 |           |   | Confirm that the footer is fixed | The Footer is fixed | Pass |  
 | Level 1   | Tab at top of page | On a desktop go to https://medusas71.github.io/Cat-Memory-Game/level1.html | The Level 1 page displays; The paw prints favicon displays in the tab; the tab is named "Level 1 Cat Memory Game" | Pass |  
-|           | Background | The background is purple | The background is purple | Pass |  
-|           | Main | The name of the game as a title displays | A "Cat Memory Game" title displays | Pass |  
+|           | Background | The background colour is purple | The background colour is purple | Pass |  
+|           | Main | The game title displays | A "Cat Memory Game" title displays | Pass |  
 |           |       | Under the title, the level and number of cards display | Level 1 - 12 cards display | Pass |  
 |           |       | Under the level, there is a Timer, Pairs and Moves | The words Timer, Pairs and Moves display | Pass |  
 |           |       | Under the word Timer, the number 60 displays | The number 60 displays | Pass |  
@@ -258,27 +259,27 @@ can check each step and verify the correct outcome.
 |           |       | Under the cards 2 buttons display - Exit and Restart | The Exit and Restart buttons display | Pass |  
 |           |       | Hover over the 2 buttons "Exit" and "Restart" | Upon hover the background colour changes to black on both buttons | Pass  
 |           |       | Click the "Exit" button | You are taken back to the Home Page | Pass |  
-|           |       | Once you have clicked "Play" from the main menu and you are back at Level 1, click any card | The card flips and a cat image displays | Pass |  
+|           |       | Once you have clicked "Play" from the Home Page and you are back at Level 1, click any card | The card flips and a cat image displays | Pass |  
 |           |       | Click the "Restart" button and click the same card that you clicked before | The page reloads, the cards shuffle and a different cat image displays | Pass |  
 |           |       | Click a card | The card flips, a cat image displays, the Timer starts counting backwards from 60 and the Moves increase by 1 | Pass |  
 |           |       | Click a 2nd card | The card flips and 2 flip cards display a cat image, the Timer is still counting backwards from 60 and the Moves increase by 1 for each card clicked | Pass |  
 |           |       | If the 2nd card doesn't match the 1st card, click a 3rd card | The first 2 cards flip back over to display the back of the cards and the 3rd card stays flipped | Pass |  
 |           |       | If the 2nd card matches the first, ensure that the Pairs increase by 1, the moves are still increasing and the timer is counting down | The Pairs increase by 1, the moves are increasing and the timer is counting down | Pass |  
 |           |       | Click a 3rd card | The first 2 pairs remain flipped and the 3rd card is flipped | Pass |  
-|           |       | Let the timer run out and don't click any cards | The Timer displays finished and a modal displays with a paw print emoji and the title of "Game Over" displays and the words "Time has run out - sorry you lose!" displays | Pass |  
-|           |       | Click the "Close" button on the modal | You are taken back to the main Home Page of the game | Pass |  
-|           |       | Click "Play" from the front menu and play the game in its entirety | The Timer countdowns and upon completion the Timer changes from the seconds remaining to Finished, The Pairs increase, The Moves increase and all pairs display | Pass |  
+|           |       | Let the timer run out and don't click any cards | The Timer displays "finished" and a modal displays with a paw print emoji and the title of "Game Over" displays and the words "Time has run out - sorry you lose!" displays | Pass |  
+|           |       | Click the "Close" button on the modal | The Home Page displays | Pass |  
+|           |       | Click "Play" from the Home Page and play the game in its entirety | The Timer countdowns and upon completion the Timer changes from the seconds remaining to Finished, The Pairs increase, The Moves increase and all pairs display | Pass |  
 |           |       | Upon completion of Level 1, a blue/green Modal displays | A modal displays with a title of "Pawulations" and a paw print emoji; You are advised that "You have found all the cards" with a cat emoji; 2 buttons display - "Next Level" and "Close" | Pass  
 |           |       | Hover over the 2 buttons "Next Level" and "Close" | Upon hover the background colour changes to black on both buttons | Pass  
-|           |       | Click "Close" | You are taken back to the main Home Page of the game | Pass |  
+|           |       | Click "Close" | The Home Page displays | Pass |  
 |           |       | Click "Play" from the main menu and play the game again. Upon completion of Level 1, click the "Next Level" button | You are taken to Level 2 of the game | Pass |  
 |           | Footer | Confirm the "copyright" information and the "developed by" information display in the middle of the footer | Copyright and developed by information displays in the middle of the footer | Pass |  
 |           | Responsiveness | Go to Dev Tools and confirm the page displays correctly when you reduce and expand the margins | The correct page displays | Pass |  
 |           |   | Confirm that there is no scroll bar either horizontally or vertically displayed | No scroll bar displays either horizontally or vertically | Pass |  
-|           |   | Confirm that the footer is fixed | The Footer is fixed | Pass |  
+|           |   | Confirm that the footer is fixed | The footer is fixed | Pass |  
 | Level 2   | Tab at top of page | On a desktop go to https://medusas71.github.io/Cat-Memory-Game/level2.html | The Level 2 page displays; The paw prints favicon displays in the tab; the tab is named "Level 2 Cat Memory Game" | Pass |  
-|           | Background | The background is purple | The background is purple | Pass |  
-|           | Main | The name of the game as a title displays | A "Cat Memory Game" title displays | Pass |  
+|           | Background | The background colour is purple | The background colour is purple | Pass |  
+|           | Main | The game title displays | A "Cat Memory Game" title displays | Pass |  
 |           |       | Under the title, the level and number of cards display | Level 2 - 16 cards display | Pass |  
 |           |       | Under the level, there is a Timer, Pairs and Moves | The words Timer, Pairs and Moves display | Pass |  
 |           |       | Under the word Timer, the number 90 displays | The number 90 displays | Pass |  
@@ -287,7 +288,7 @@ can check each step and verify the correct outcome.
 |           |       | Under the Timer, Pairs and Moves, 16 cards display | 16 blue/green cards showing a black cat displays in 4 rows of 4 cards on each row | Pass |  
 |           |       | Under the cards 2 buttons display - Exit and Restart | The Exit and Restart buttons display | Pass |  
 |           |       | Hover over the 2 buttons "Exit" and "Restart" | Upon hover the background colour changes to black on both buttons | Pass  
-|           |       | Click the "Exit" button | You are taken back to the Home Page | Pass |  
+|           |       | Click the "Exit" button |The Home Page displays | Pass |  
 |           |       | On Level 2, click any card | The card flips and a cat image displays | Pass |  
 |           |       | Click the "Restart" button and click the same card that you clicked before | The page reloads, the cards shuffle and a different cat image displays | Pass |  
 |           |       | Click a card | The card flips, a cat image displays, the Timer starts counting backwards from 90 and the Moves increase by 1 | Pass |  
@@ -296,7 +297,7 @@ can check each step and verify the correct outcome.
 |           |       | If the 2nd card matches the first, ensure that the Pairs increase by 1, the moves are still increasing and the timer is counting down | The Pairs increase by 1, the moves are increasing and the timer is counting down | Pass |  
 |           |       | Click a 3rd card | The first 2 pairs remain flipped and the 3rd card is flipped | Pass |  
 |           |       | Let the timer run out and don't click any cards | The Timer displays finished and a modal displays with a paw print emoji and the title of "Game Over" displays and the words "Time has run out - sorry you lose!" displays | Pass |  
-|           |       | Click the "Close" button on the modal | You are taken back to the main Home Page of the game | Pass |  
+|           |       | Click the "Close" button on the modal | The Home Page displays | Pass |  
 |           |       | Go back to Level 2 and play the game in its entirety | The Timer countdowns and upon completion the Timer changes from the seconds remaining to Finished, The Pairs increase, The Moves increase and all pairs display | Pass |  
 |           |       | Upon completion of Level 2, a blue/green Modal displays | A modal displays with a title of "Pawsome Work" and a paw print emoji; You are advised that "You have found all the cards" with a cat emoji; 1 "Close" button displays | Pass  
 |           |       | Hover over the "Close" button | Upon hover the background colour changes to black on the "Close" buttons | Pass  
