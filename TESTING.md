@@ -103,25 +103,30 @@ Below is the lighthouse score for each page on mobile and desktop:
 ## Wave Report  
 
 * [Wave](https://wave.webaim.org/) was used to check for any accessibility issues on all pages. 
-The report came back with no errors and no contrast errors. There were alerts that displayed.  
-I have addressed each alert below:
+The report came back with no errors and no contrast errors. There was one alert displayed.  
+I have addressed the alert below:
 
 <details open>
 <summary><b>(click to expand or hide</b></summary>
 
 ### index.html  
 
+![Summary Home Page](./testing-images/wave/summary-home-page.jpg)
 
+![Details Home Page](./testing-images/wave/details-home-page.jpg)
+
+1 Alert displays:
+* 1 x Skipped heading level - I cannot locate where the heading level is skipped. As per the below screenshot there is in only one heading level on this page:
+
+![Heading Home Page](./testing-images/wave/heading-home-page.jpg)
 
 ### level1.html  
 
-
+![Summary Level 1](./testing-images/wave/summary-level1.jpg)
 
 ### level2.html
 
-
-
-
+![Summary Level 2](./testing-images/wave/summary-level2.jpg)
 
 </details> 
 
@@ -369,8 +374,18 @@ The issues that I had with JavaScript was working out how to write the code and 
 
   * I rechecked the code through the W3C HTML Validator and there were no errors found. So this fixed my issue.  
 
+**Wave Testing**  
+**Issue**:  
+Upon testing the pages in WAVE - Web Accessibility Evaluation Tool, I was advised that there were alerts on level 1 and level 2 stating that the 'nearby image has the same alternative text'. I originally had the card front, alt text, reading 'cat card' and the card back, alt text, reading 'card back'. 
+  
+* **Fix**: I spoke to Abi Harrison_alumna from Slack regarding accessibility and she advised to: 
+  * Include a descriptive alt text in the JavaScript against each card; 
+  * Change the alt text for the card front on Level 1 and Level 2 to be a placeholder as it is populated by JavaScript; and  
+  * Change the alt text for the card back on Level 1 and Level 2 to be descriptive and have a different alt text on each card.  
+  This fixed the issue on Wave and included blind or visually impaired users to play my game.
+
 **Console Log Testing**  
-  The game was tested whilst having the Console log open in Dev Tools on Chrome, to test for any console errors. A few errors were caught and these were discussed with my mentor as I could not work out how to rectify them.
+The game was tested whilst having the Console log open in Dev Tools on Chrome, to test for any console errors. A few errors were caught and these were discussed with my mentor as I could not work out how to rectify them.
 
   **Error One** 
   * Upon opening the home page, I was receiving a site.webmanifest 404 error. I googled the error but wasn't sure in how to fix this or how important the file was.
@@ -387,6 +402,6 @@ The issues that I had with JavaScript was working out how to write the code and 
 
   * **Fix**: I googled the error and found an answer on [Stack Overflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) which advised me to ignore the error.
 
-  This is the only console error when playing the game.
+This is the only console error when playing the game.
 
   
