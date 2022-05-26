@@ -1,4 +1,4 @@
-<h1 align="center">Cat Memory Game</h1>
+<h1 align="center">Cat Memory Game &#128062;</h1>
 
 <h3>Milestone Two Project - Interactive Frontend Development</h3>
 <br>
@@ -70,7 +70,7 @@ Players Goals
   * click a card, the card flips and displays a cat picture
   * have the cards that matched, stay flipped so I know exactly how many cards are left to play
   * be able to click the cards as many times as required until the matching pair displays
-  * have fun
+  * have fun!
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -100,15 +100,15 @@ The features of this project will include:
   * be able to restart the level
   * see a cat image when flipping a card
   * keep the matching cards flipped
-  * click a particular card again if the cards do not match
+  * click a particular card again if the cards do not match.
 
 <a id="structure"></a>
 ### 3. Structure
 
 The website consists of three pages:
 
-* A Home Page that includes instructions on how to play the game;
-* A Level 1 Page that includes the cat cards to play the game;
+* A Home Page that includes instructions on how to play the game
+* A Level 1 Page that includes the cat cards to play the game
 * A Level 2 Page that includes more cat cards than level 1 to play the game.
  
 The information is grouped logically for all game players. The Interaction Design (IXD) 
@@ -140,8 +140,8 @@ Here are the [wireframes](./documents/cat-memory-game.pdf):
 
 Colour Scheme
 
-* I made the background colour of the pages purple #660099 for two reasons. 
-  1. Purple is a royal colour and cats think they are royalty. 
+* I made the background colour of the pages purple #660099 for two reasons:  
+  1. Purple is a royal colour and cats think they are royalty  
   2. My favourite colour is purple.
 * I then wanted a blue/green colour to compliment the purple. I selected a Maximum Blue Green #08B5C2.
 * I originally kept the text colour generic and used Black #000 in some parts, however this 
@@ -215,14 +215,13 @@ The Level 1 Page features:
   * Once a user finds a matching pair, the Pairs number increases accordingly.
   * Once a user clicks a card, the Moves number increases accordingly.
   * One feature on Level 1 is that if the 2 cards chosen are incorrect the cards 
-  will stay displayed on the screen until a user clicks a 3rd card. The user is 
-  unaware of this, but it is a feature that allows the cards to stay displayed 
-  longer to the user.
-  * On completion of Level 1 a "Congratulations" modal displays and two buttons which consist
-of "Next Level" and "Close".
+  will stay displayed on the screen until a user clicks a 3rd card. This feature 
+  allows the cards to stay displayed longer to the user.
+  * On completion of Level 1 a "Congratulations" modal displays and two buttons 
+  which consist of "Next Level" and "Close".
   * If "Next Level" is clicked the user is taken to the 2nd level which is the 3rd 
   page of the website.
-  * If "Close" is clicked, the user is taken back to the main menu.
+  * If "Close" is clicked, the user is taken back to the Home Page.
 
 The Level 2 Page features:
 
@@ -317,7 +316,7 @@ when I added more information to this -->
 <a id="deployment"></a>
 # Deployment
 
-The code for this website was written in [Gitpd](https://www.gitpod.io/) and pushed to GitHub Pages from its 
+The code for this website was written in [Gitpod](https://www.gitpod.io/) and pushed to GitHub Pages from its 
 [GitHub repository](https://github.com/Medusas71/Cat-Memory-Game) using Chrome browser.
 
 The following process was used to deploy this website:
@@ -358,15 +357,16 @@ restart the browser.
 
 Code
 
-* Manni_alumnus, for explaining various parts of JavaScript to me
+* Manni_alumnus, for explaining various parts of JavaScript
+* Abi Harrison_alumna, for providing accessibility guidance  
 * David Bowers, Code Institute student for his assistance with css positioning via a Webinar
 * Scott Böning_alumnus, for his assistance with the html and css
-* Mr_Bim_alumni, for explaining various parts of JavaScript to me
-* My friend Arik for explaining various parts of JavaScript to me
-* My friend Rob for explaining various parts of JavaScript to me
+* Mr_Bim_alumni, for explaining various parts of JavaScript
+* My friend Arik for explaining various parts of JavaScript
+* My friend Rob for explaining various parts of JavaScript
 * Former students and current students on Slack for their support
 * Tutor Support for assistance in helping me understand some code
-* My mentor for all his support and assistance
+* My mentor for his guidance with specific errors 
 * [Stack Overflow](https://stackoverflow.com/) for resolving specific issues
 * [Code Academy](https://www.codecademy.com/) for a refresher on JavaScript
 * [Memory Game - Vanilla JavaScript](https://marina-ferreira.github.io/tutorials/js/memory-game/) for ideas
@@ -390,6 +390,8 @@ Media
 
 Acknowledgements
 
-* My friends and family for all their feedback and support  
+* My friends and family for all their feedback and support
+* A huge thank you to Manni_alumnus for all his support and feedback and pushing me through to the finishing line  
+* My mentor for all his support and assistance  
 
 [Back to Table of Contents](#table-of-contents)
