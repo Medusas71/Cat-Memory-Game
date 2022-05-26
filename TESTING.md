@@ -2,6 +2,8 @@
 
 [View the main README.md document](README.md)
 
+[View the deployed Cat Memory Game](https://medusas71.github.io/Cat-Memory-Game/)
+
 **Please note: To open any links in this document in a new browser tab, press 'CTRL + click'.**
 
 <a id=#table-of-contents></a>
@@ -60,10 +62,68 @@ I had one warning and one undefined variable display:
  ![JSHint Validation results](./testing-images/jshint/jshint.jpg)
 
 <a id="lighthouse"></a>
-## Lighthouse
+## Lighthouse  
+
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to check for any problems on all pages. 
+Some of the issues like the manifest error have been resolved to improve the score. The remaining issues will be 
+researched to improve the score as I learn.  
+
+Below is the lighthouse score for each page on mobile and desktop:
+
+<details open>
+<summary><b>(click to expand or hide</b></summary>
+
+### index.html - mobile
+
+![index-mobile](./testing-images/lighthouse/index-mobile-lh.jpg)
+
+### index.html - desktop
+
+![index-desktop](./testing-images/lighthouse/index-desktop-lh.jpg)
+
+### level1.html - mobile
+
+![level1-mobile](./testing-images/lighthouse/level1-mobile-lh.jpg)
+
+### level1.html - desktop
+
+![level1-desktop](./testing-images/lighthouse/level1-desktop-lh.jpg)
+
+### level2.html - mobile
+
+![level2-mobile](./testing-images/lighthouse/level2-mobile-lh.jpg)
+
+### level2.html - desktop
+
+![level2-desktop](./testing-images/lighthouse/level2-desktop-lh.jpg)
+
+</details> 
 
 <a id="wave"></a>
 ## Wave Report  
+
+* [Wave](https://wave.webaim.org/) was used to check for any accessibility issues on all pages. 
+The report came back with no errors and no contrast errors. There were alerts that displayed.  
+I have addressed each alert below:
+
+<details open>
+<summary><b>(click to expand or hide</b></summary>
+
+### index.html  
+
+
+
+### level1.html  
+
+
+
+### level2.html
+
+
+
+
+
+</details> 
 
 <a id="user-stories"></a>
 ## User Stories  
@@ -133,7 +193,9 @@ until the matching pair displays.
    * This is achieved by clicking as many cards as you like until a matching pair displays.  
     <p>&nbsp;</p>
 9. As a player, I would like to have fun.
-   * This is achieved by playing the game and having a laugh at the cat images.
+   * This is achieved by playing the game and having a laugh at the cat images.  
+
+</details> 
 
 <a id="manual-testing"></a>
 ## Manual testing of all elements and functionality on every page  
@@ -238,6 +300,8 @@ can check each step and verify the correct outcome.
 |           | Responsiveness | Go to Dev Tools and confirm the page displays correctly when you reduce and expand the margins | The correct page displays | Pass |  
 |           |   | Confirm that there is no scroll bar either horizontally or vertically displayed | No scroll bar displays either horizontally or vertically | Pass |  
 |           |   | Confirm that the footer is fixed | The Footer is fixed | Pass |  
+
+</details> 
 
 <a id="bugs-fixes"></a>
 ## Bugs/Fixes  
