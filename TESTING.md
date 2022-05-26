@@ -140,7 +140,26 @@ until the matching pair displays.
 
 ### Browsers tested:
 
+* Google Chrome
+* Mozilla Firefox
+* Microsoft EDGE
+* Opera
+* Safari  
+
+No errors were found on the above browsers, but it is noted that there is more space between the cards on Mozilla Firefox, Microsoft EDGE and Opera. I am yet to work out a fix for these browsers so the cards are closer together. As it isn't an issue with playing the game, this is something I will look into at a later stage.
+
 ### Devices tested:
+
+* iPhone 12
+* iPhone 11
+* iPhone XR
+* iPhone 7
+* Samsung Tablet S6
+* Samsung S20 Plus
+* Samsung Galaxy S10
+* Samsung A3
+
+No errors were found when testing on the above devices.
 
 <details open>
 <summary><b>(click to expand or hide)</b></summary>
