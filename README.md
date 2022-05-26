@@ -1,6 +1,6 @@
 <h1 align="center">Cat Memory Game</h1>
 
-<h3>Stream Two Project - Interactive Frontend Development</h3>
+<h3>Milestone Two Project - Interactive Frontend Development</h3>
 <br>
 
 [View the deployed Cat Memory Game](https://medusas71.github.io/Cat-Memory-Game/)
@@ -358,10 +358,10 @@ restart the browser.
 
 Code
 
+* Manni_alumnus, for explaining various parts of JavaScript to me
 * David Bowers, Code Institute student for his assistance with css positioning via a Webinar
 * Scott Böning_alumnus, for his assistance with the html and css
 * Mr_Bim_alumni, for explaining various parts of JavaScript to me
-* Manni_alumnus, for explaining various parts of JavaScript to me
 * My friend Arik for explaining various parts of JavaScript to me
 * My friend Rob for explaining various parts of JavaScript to me
 * Former students and current students on Slack for their support
@@ -378,5 +378,18 @@ The below code was sourced from the following various places and modified to sui
 * How to create multiple flip cards that flip with an onclick(): https://stackoverflow.com/questions/65485778/javascript-how-can-i-create-multiple-flip-cards-that-flip-with-an-onclick  
 * Creating a countdown - function for timer: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown 
 * How to trigger a Bootstrap modal programmatically: https://stackoverflow.com/questions/11404711/how-can-i-trigger-a-bootstrap-modal-programmatically 
+
+Content  
+
+* All content was written by myself
+
+Media  
+
+* All cat images on the front of the cards are courtesy of [Unsplash](https://unsplash.com/)  
+* The background image and the image on the back of the cards are courtesy of [Pngset](https://pngset.com/)  
+
+Acknowledgements
+
+* My friends and family for all their feedback and support  
 
 [Back to Table of Contents](#table-of-contents)
