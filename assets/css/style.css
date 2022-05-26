@@ -48,13 +48,6 @@ h2 {
     font-family: "Flavors", sans-serif;
 }
 
-/* h3 {
-    color: #E0E1E4;
-    font-size: 10px;
-    font-family: "Fresca", sans-serif;
-    letter-spacing: 1px;
-} */
-
 .container-fluid {
     width: 80%;
 }
@@ -258,19 +251,6 @@ footer {
     .container-fluid {
         width: 70%;
     }
-    
-    /* h2 {
-        font-size: 35px;
-    } */
-
-    /* .game-stats {
-        font-size: 15px;
-    } */
-
-    /* .card {
-        width: 5em;
-        height: 5em;
-    } */
 
     .button {
         font-size: 15px;
@@ -314,10 +294,6 @@ footer {
     .modal-body {
         font-size: 20px;
     }
-
-    /* .button {
-        font-size: 20px;
-    } */
 }
 
 /*-------------------------large devices (desktops, 992px and up)---*/
@@ -327,11 +303,6 @@ footer {
     .container-fluid {
         width: 50%;
     }
-
-    /* .card {
-        width: 6em;
-        height: 6em;
-    } */
 
     .button {
         font-size: 20px;
@@ -350,11 +321,6 @@ footer {
         min-height: 300px;
         max-width: 400px;
     }
-
-    /* .card {
-        width: 7em;
-        height: 7em;
-    } */
 }
 
 /*-------------------------extra extra large devices (extra large desktops, 1920px and up)---*/
