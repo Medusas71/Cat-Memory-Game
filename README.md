@@ -391,7 +391,7 @@ Media
 Acknowledgements
 
 * My friends and family for all their feedback and support
-* A huge thank you to Manni_alumnus for all his support and feedback and pushing me through to the finishing line  
+* A huge thank you to [Manni_alumnus](https://github.com/manni8436) for all his support, feedback and pushing me through to the finishing line  
 * My mentor for all his support and assistance  
 
 [Back to Table of Contents](#table-of-contents)
