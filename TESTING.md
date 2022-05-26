@@ -259,7 +259,11 @@ ensuring that the letters change colour immediately when hovering. The delay had
 
 **5. Issue**:  
     My buttons weren't aligned correctly.
-* **Fix**: I spoke to Tutor Support and they advised me to add in a flex-row class with a display of flex, which fixed the issue.
+* **Fix**: I spoke to Tutor Support and they advised me to add in a flex-row class with a display of flex, which fixed the issue.  
+
+**6. Issue**:  
+    Upon testing, my page had a vertical scroll bar on a desktop.
+* **Fix**: I changed the size of my container and cards so the game would fit on one page without the need for a vertical scroll bar.
 
 **JavaScript**  
 The issues that I had with JavaScript was working out how to write the code and generally trying to make it work. I did a lot of googling and found information from W3 Schools and various other places on the web. Please see the [Readme.md](README.md) credits for this information.
@@ -295,6 +299,11 @@ The issues that I had with JavaScript was working out how to write the code and 
 
   * **Fix**: I spoke to my mentor and after showing me some debugging tools he advised that as the error was only displaying on the index.html page that I can remove the javascript script from the footer as that was what is causing the error. I removed the javascript script from the footer of the index.html file and this resolved the issue.  
 
-  Now there are no console errors when playing the game.
+  **Error Three**
+  * This error displayed after I had finished with my mentor. When playing the game I receive an "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+
+  * **Fix**: I googled the error and found an answer on [Stack Overflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) which advised me to ignore the error.
+
+  This is the only console error when playing the game.
 
   
