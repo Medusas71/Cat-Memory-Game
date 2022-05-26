@@ -4,40 +4,40 @@ const gameLevels = {
     level1: {
         cardArray: [
 
-            ["cat1", "assets/images/cat1.jpg"],
-            ["cat1", "assets/images/cat1.jpg"],
-            ["cat2", "assets/images/cat2.jpg"],
-            ["cat2", "assets/images/cat2.jpg"],
-            ["cat3", "assets/images/cat3.jpg"],
-            ["cat3", "assets/images/cat3.jpg"],
-            ["cat4", "assets/images/cat4.jpg"],
-            ["cat4", "assets/images/cat4.jpg"],
-            ["cat5", "assets/images/cat5.jpg"],
-            ["cat5", "assets/images/cat5.jpg"],
-            ["cat6", "assets/images/cat6.jpg"],
-            ["cat6", "assets/images/cat6.jpg"]
+            ["cat1", "assets/images/cat1.jpg", "A calico cat poking out its tongue, card number 1"],
+            ["cat1", "assets/images/cat1.jpg", "A calico cat poking out its tongue, card number 2"],
+            ["cat2", "assets/images/cat2.jpg", "A fluffy tabby cat poking out its tongue, card number 1"],
+            ["cat2", "assets/images/cat2.jpg", "A fluffy tabby cat poking out its tongue, card number 2"],
+            ["cat3", "assets/images/cat3.jpg", "A black and white cat poking out its tongue, card number 1"],
+            ["cat3", "assets/images/cat3.jpg", "A black and white cat poking out its tongue, card number 2"],
+            ["cat4", "assets/images/cat4.jpg", "A tabby cat wearing small sunglasses, card number 1"],
+            ["cat4", "assets/images/cat4.jpg", "A tabby cat wearing small sunglasses, card number 2"],
+            ["cat5", "assets/images/cat5.jpg", "A tabby cat wearing large sunglasses, card number 1" ],
+            ["cat5", "assets/images/cat5.jpg", "A tabby cat wearing large sunglasses, card number 2"],
+            ["cat6", "assets/images/cat6.jpg", "A british shorthair cat wearing sunglasses, card number 1"],
+            ["cat6", "assets/images/cat6.jpg", "A british shorthair cat wearing sunglasses, card number 2"]
         ],
         timer: 60,
         winningTitle: "Pawulations"
     },
     level2: {
         cardArray: [
-            ["cat1", "assets/images/cat1.jpg"],
-            ["cat1", "assets/images/cat1.jpg"],
-            ["cat2", "assets/images/cat2.jpg"],
-            ["cat2", "assets/images/cat2.jpg"],
-            ["cat3", "assets/images/cat3.jpg"],
-            ["cat3", "assets/images/cat3.jpg"],
-            ["cat4", "assets/images/cat4.jpg"],
-            ["cat4", "assets/images/cat4.jpg"],
-            ["cat5", "assets/images/cat5.jpg"],
-            ["cat5", "assets/images/cat5.jpg"],
-            ["cat6", "assets/images/cat6.jpg"],
-            ["cat6", "assets/images/cat6.jpg"],
-            ["cat7", "assets/images/cat7.jpg"],
-            ["cat7", "assets/images/cat7.jpg"],
-            ["cat8", "assets/images/cat8.jpg"],
-            ["cat8", "assets/images/cat8.jpg"]
+            ["cat1", "assets/images/cat1.jpg", "A calico cat poking out its tongue, card number 1"],
+            ["cat1", "assets/images/cat1.jpg", "A calico cat poking out its tongue, card number 2"],
+            ["cat2", "assets/images/cat2.jpg", "A fluffy tabby cat poking out its tongue, card number 1"],
+            ["cat2", "assets/images/cat2.jpg", "A fluffy tabby cat poking out its tongue, card number 2"],
+            ["cat3", "assets/images/cat3.jpg", "A black and white cat poking out its tongue, card number 1"],
+            ["cat3", "assets/images/cat3.jpg", "A black and white cat poking out its tongue, card number 2"],
+            ["cat4", "assets/images/cat4.jpg", "A tabby cat wearing small sunglasses, card number 1"],
+            ["cat4", "assets/images/cat4.jpg", "A tabby cat wearing small sunglasses, card number 2"],
+            ["cat5", "assets/images/cat5.jpg", "A tabby cat wearing large sunglasses, card number 1"],
+            ["cat5", "assets/images/cat5.jpg", "A tabby cat wearing large sunglasses, card number 2"],
+            ["cat6", "assets/images/cat6.jpg", "A british shorthair cat wearing sunglasses, card number 1"],
+            ["cat6", "assets/images/cat6.jpg", "A british shorthair cat wearing sunglasses, card number 2"],
+            ["cat7", "assets/images/cat7.jpg", "A black and white cat yawning, card number 1"],
+            ["cat7", "assets/images/cat7.jpg", "A black and white cat yawning, card number 2"],
+            ["cat8", "assets/images/cat8.jpg", "A tabby cat yawning, card number 1"],
+            ["cat8", "assets/images/cat8.jpg", "A tabby cat yawning, card number 2"]
         ],
         timer: 90,
         winningTitle: "Pawsome Work"
@@ -71,6 +71,7 @@ for (let i = cardArray.length - 1; i > -1; --i) {
 
     // Populate the screen grid with the cat picture
     document.getElementById("cardNum" + i).src = cardArray[i][1];
+    document.getElementById("cardNum" + i).altText = cardArray[i][2];
 }
 
 // Create multiple flip cards that flip with click - Sourced from the web - see Readme.md credits
