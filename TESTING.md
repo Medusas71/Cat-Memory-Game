@@ -225,6 +225,7 @@ No errors were found on the above browsers, but it is noted that there is more s
 * Samsung S20 Plus
 * Samsung Galaxy S10
 * Samsung A3
+* Motorola G9 Plus  
 
 No errors were found when testing on the above devices.
 
