@@ -47,7 +47,9 @@ Interactive Frontend Development Module.
 The cat memory game has been created for people of all ages that love cats &#128570; and 
 would like to test their memory.
 The purpose of this website is to improve brain functionality such as focus, 
-concentration and attention and to also have fun. &#128062;
+concentration and attention and to also have fun. &#128062;  
+
+The final project was submitted 27 May 2022.
 
 [Back to Table of Contents](#table-of-contents)
 
